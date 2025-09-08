@@ -1,0 +1,118 @@
+@use "../global" as *;
+@use "sass:map";
+
+.c-drawer-icon {
+  inline-size: 48px;
+  block-size: 48px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  background: var(--main-color);
+  position: relative;
+  &.js-show {
+    .c-drawer-icon__bar:nth-of-type(1) {
+      animation: bar-top-to-cross 0.5s forwards;
+    }
+    .c-drawer-icon__bar:nth-of-type(2) {
+      animation: bar-middle-fade 0.5s forwards;
+    }
+    .c-drawer-icon__bar:nth-of-type(3) {
+      animation: bar-bottom-to-cross 0.5s forwards;
+    }
+  }
+
+  &:not(.js-show) {
+    .c-drawer-icon__bar:nth-of-type(1) {
+      animation: bar-top-reset 0.5s forwards;
+    }
+    .c-drawer-icon__bar:nth-of-type(2) {
+      animation: bar-middle-reset 0.5s forwards;
+    }
+    .c-drawer-icon__bar:nth-of-type(3) {
+      animation: bar-bottom-reset 0.5s forwards;
+    }
+  }
+  @media (min-width: 1120px) {
+    display: none;
+  }
+}
+
+.c-drawer-icon__bar {
+  display: block;
+  inline-size: 30px;
+  block-size: 1px;
+  background: var(--color-white);
+  transform-origin: center;
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
+
+@keyframes bar-top-to-cross {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(10px) rotate(0);
+  }
+  100% {
+    transform: translateY(10px) rotate(45deg);
+  }
+}
+
+@keyframes bar-middle-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bar-bottom-to-cross {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0);
+  }
+  100% {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+@keyframes bar-top-reset {
+  0% {
+    transform: translateY(10px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes bar-middle-reset {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bar-bottom-reset {
+  0% {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}

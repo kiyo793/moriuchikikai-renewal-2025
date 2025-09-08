@@ -1,0 +1,62 @@
+@use "../global" as *;
+@use "sass:map";
+
+.l-header {
+    padding-block: clamp-vi(16, 22);
+}
+
+.l-header__inner {
+  inline-size: min(calc(1400px + clamp-vi(8, 20) * 2), 100%);
+  padding-inline: clamp-vi(8, 20);
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-header__logo {
+  inline-size: 272px;
+}
+
+.l-header__logo-link {
+  inline-size: 100%;
+}
+
+//グローバルナビ
+.l-gnav {
+    @media (max-width: 1119px) {
+      display: none;
+    }
+}
+
+.l-gnav__list {
+  display: flex;
+  gap: 19.5px;
+  align-items: center;
+}
+
+.l-gnav__item {
+}
+
+.l-gnav__link {
+    font-weight: var(--fw-mid);
+    line-height: 1;
+    letter-spacing: 0.64px;
+  &--text {
+    padding-block: 16px;
+  }
+  &--icon {
+    display: inline-block;
+    inline-size: 32px;
+  }
+}
+
+.l-gnav__button {
+    padding: 13px 32px;
+    background: var(--main-color);
+    border-radius: 100px;
+    color: var(--color-white);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.64px;
+}

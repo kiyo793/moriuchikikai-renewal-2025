@@ -1,0 +1,64 @@
+@use "../global" as *;
+@use "sass:map";
+
+.p-drawer {
+  position: fixed;
+  inset-block-start: var(--header-height);
+  inset-inline-end: 0;
+  inline-size: 375px;
+  block-size: 100vb;
+  background: var(--bg-white);
+  overflow-y: auto;
+  z-index: map.get($layer, "drawer");
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+//出現　アニメーション
+.p-drawer.js-show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.p-drawer__body {
+    padding-block: 77px;
+    padding-inline: 33px;
+}
+
+.p-drawer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.p-drawer__link {
+    font-size: 20px;
+    font-weight: var(--fw-mid);
+    line-height: 1;
+    letter-spacing: 0.8px;
+}
+
+.p-drawer__link--icon {
+    display: inline-block;
+    margin-block-start: 3px;
+    inline-size: 32px;
+}
+
+.p-drawer__button {
+    display: block;
+    margin-block-start: 8px;
+    padding-block: 16px;
+    inline-size: 100%;
+    background: var(--main-color);
+    border-radius: 100px;
+    text-align: center;
+    color: var(--color-white);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.8px;
+    line-height: 1.7;
+}
+

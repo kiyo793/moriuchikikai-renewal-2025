@@ -58,3 +58,98 @@ function setLayoutHeights() {
     );
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const drawerIcon = document.querySelector(".c-drawer-icon");
+  const drawer = document.querySelector(".p-drawer");
+  const drawerNavItem = document.querySelectorAll(
+    '.p-drawer__link[href^="#"], .p-drawer__link[href^="/#"]'
+  );
+  const header = document.querySelector(".l-header");
+  const breakpoint = 768;
+  let isMenuOpen = false;
+  let isMenuOpenAtBreakpoint = false;
+  let scrollY = 0;
+
+  const openMenu = () => {
+    scrollY = window.scrollY;
+    drawer.classList.add("js-show");
+    drawerIcon.classList.add("js-show");
+    header.classList.add("js-show");
+    document.body.classList.add("is-fixed");
+    document.body.style.top = `-${scrollY}px`;
+  };
+
+  const closeMenu = () => {
+    drawer.classList.remove("js-show");
+    drawerIcon.classList.remove("js-show");
+    header.classList.remove("js-show");
+    document.body.classList.remove("is-fixed");
+    document.body.style.top = "";
+    window.scrollTo(0, scrollY);
+    isMenuOpen = false;
+  };
+
+  const toggleMenu = () => {
+    if (!drawer.classList.contains("js-show")) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
+  };
+
+  const handleResize = () => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth > breakpoint && isMenuOpenAtBreakpoint) {
+      closeMenu();
+    } else if (
+      windowWidth <= breakpoint &&
+      drawer.classList.contains("js-show")
+    ) {
+      isMenuOpenAtBreakpoint = true;
+    }
+  };
+
+  const clickOuter = (event) => {
+    if (
+      drawer.classList.contains("js-show") &&
+      !drawer.contains(event.target) &&
+      isMenuOpen
+    ) {
+      closeMenu();
+    } else if (
+      drawer.classList.contains("js-show") &&
+      !drawer.contains(event.target)
+    ) {
+      isMenuOpen = true;
+    }
+  };
+
+  const linkScroll = (target) => {
+    const headerHeight = header.offsetHeight;
+    if (target) {
+      const targetPosition =
+        target.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = targetPosition - headerHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  drawerIcon.addEventListener("click", toggleMenu);
+  window.addEventListener("resize", handleResize);
+  document.addEventListener("click", clickOuter);
+
+  drawerNavItem.forEach((item) => {
+    item.addEventListener("click", (event) => {
+      event.preventDefault();
+      const href = item.getAttribute("href");
+      const id = href.split("#")[1];
+      const targetItem = document.getElementById(id);
+      closeMenu();
+      linkScroll(targetItem);
+    });
+  });
+});
