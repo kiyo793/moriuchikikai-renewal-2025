@@ -1,9 +1,10 @@
 @use "../global" as global;
 
 body {
-    color: var(--color-text-sand);
+    color: var(--text-color-black);
     font-family: var(--ff-base);
     font-size: var(--fz-base);
     font-weight: var(--fw-base);
-    background-color: var(--background-gray);
+    line-height: var(--line-height-base);
+    background-color: var(--bg-white);
 }
