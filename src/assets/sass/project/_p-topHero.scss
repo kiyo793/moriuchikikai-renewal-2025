@@ -1,0 +1,46 @@
+@use "../global" as *;
+@use "sass:map";
+
+.p-topHero {
+  padding-block-start: 16px;
+  padding-block-end: clamp-vi(32, 40);
+}
+
+.p-topHero__inner {
+  inline-size: min(calc(1920px + clamp-vi(16, 40) * 2), 100%);
+  padding-inline: clamp-vi(16, 40);
+  margin-inline: auto;
+  position: relative;
+}
+
+.p-topHero__image {
+  inline-size: 100%;
+  block-size: clamp-vi(550, 680);
+  border-radius: 32px;
+  overflow: hidden;
+  img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+.p-topHero__contents {
+  position: absolute;
+  padding-inline-start: clamp-vi(16, 40);
+  inset-inline-start: clamp-vi(16, 80);
+  inset-block-end: clamp-vi(40, 80);
+}
+
+.p-topHero__text {
+  color: var(--color-white);
+  font-size: clamp-vi(28, 40);
+  font-weight: var(--fw-bold);
+  line-height: 1.75;
+  letter-spacing: 1.6px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  @include mq(sp) {
+    line-height: 1.6;
+    letter-spacing: 1.12px;
+  }
+}
