@@ -1,0 +1,6 @@
+@use "../global" as *;
+@use "sass:map";
+
+.l-main{
+      min-height: calc(100vh - var(--footer-height));
+}

@@ -1,0 +1,24 @@
+@use "../global" as *;
+
+.u-hidden{
+    &-sp{
+        @include mq('sp') {
+            display: none;
+        }
+    }
+    &-mid {
+        @media (min-width: 450px) and (max-width: 767px)  {
+            display: none;
+        }
+    }
+    &-tab{
+        @media (min-width: 768px) and (max-width: 1023px) {
+            display: none;
+        }
+    }
+    &-pc{
+        @include mq('pc') {
+            display: none;
+        }
+    }
+}

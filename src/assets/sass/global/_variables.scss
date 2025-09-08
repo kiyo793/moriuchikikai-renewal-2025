@@ -1,0 +1,83 @@
+:root {
+  // color
+  --color-text-black: #333;
+  --color-text-white:  #FFF;
+  --color-text-sand: #D9CEBA;
+  --color-text-darkgray: #2C2C2C;
+  --color-text-lightgray: #C5C5C5;
+  --color-text-mocha: #9E9484;
+  --color-text-yellow: #B78727;
+
+  --color-black: #333;
+  --color-darkgray: #2C2C2C;
+  --color-gray: #474747;
+  --color-lightgray:#C5C5C5;
+  --color-white:  #FFF;
+  --color-sand: #D9CEBA;
+  --color-mocha: #9E9484;
+  --color-yellow: #B78727;
+  --color-blue: #2F4F4F;
+
+  --background-black: #1A1A1A;
+  --background-gray: #2C2C2C;
+  --background-fv: #000;
+
+
+  --color-overlay: rgb(from #000 r g b / 60%);
+
+  --opacity: 0.7;
+
+
+  --background-base: #f2f2f2;
+
+  //font
+  --ff-base: "Shippori Mincho", serif;
+  --ff-en: "Cormorant Garamond", serif;
+
+  --fz-base: 16px;
+
+
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 700;
+
+
+}
+
+//レイアウト
+
+$inner-width: 1240px;
+$sp-width: 768px;
+
+//ブレイクポイント
+$breakpoints: (
+  "sp": "screen and (max-width: #{$sp-width - 1px})",
+  "pc": "screen and (min-width: 768px)",
+  "lg": "screen and (max-width: 1024px)",
+  "xl": "screen and (min-width: 1025px)",
+);
+
+//　clamp計算
+@function clamp-vi($min, $max, $min-view-port: 375, $max-view-port: 1440) {
+  $variable-part: calc(($max - $min) / ($max-view-port - $min-view-port));
+  $constant: calc(($max - $max-view-port * $variable-part) / 16);
+  $min-rem: calc($min / 16 * 1rem);
+  $max-rem: calc($max / 16 * 1rem);
+  $variable-rem: calc($constant * 1rem);
+  $variable-vi: calc(100 * $variable-part * 1vi);
+  @return clamp($min-rem, $variable-rem + $variable-vi, $max-rem);
+}
+
+// 重なり順の定義
+$layer: (
+  loading: 300,
+  modal: 100,
+  drawer: 40,
+  header: 30,
+  floating: 20,
+  footer: 10,
+  content: 5,
+  default: 1,
+  background: -1,
+  );
+
