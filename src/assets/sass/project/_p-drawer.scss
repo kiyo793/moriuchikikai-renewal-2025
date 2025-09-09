@@ -12,6 +12,7 @@
   z-index: map.get($layer, "drawer");
 
   opacity: 0;
+  translate: 10px;
   pointer-events: none;
   visibility: hidden;
   transition: all 0.4s;
@@ -22,6 +23,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  translate: 0;
 }
 
 .p-drawer__body {

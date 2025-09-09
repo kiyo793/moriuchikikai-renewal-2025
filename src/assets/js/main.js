@@ -37,27 +37,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// headerの高さとfooterの高さをCSS変数にセット
+
 function setLayoutHeights() {
   const header = document.querySelector(".l-header");
   const footer = document.querySelector(".l-footer");
 
   if (header) {
-    const headerHeight = header.offsetHeight;
     document.documentElement.style.setProperty(
       "--header-height",
-      `${headerHeight}px`
+      `${header.offsetHeight}px`
     );
   }
 
   if (footer) {
-    const footerHeight = footer.offsetHeight;
     document.documentElement.style.setProperty(
       "--footer-height",
-      `${footerHeight}px`
+      `${footer.offsetHeight}px`
     );
   }
 }
+
+window.addEventListener("load", setLayoutHeights);
+window.addEventListener("resize", setLayoutHeights);
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const drawerIcon = document.querySelector(".c-drawer-icon");

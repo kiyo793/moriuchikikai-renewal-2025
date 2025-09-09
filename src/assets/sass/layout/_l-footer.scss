@@ -1,0 +1,48 @@
+@use "../global" as *;
+@use "sass:map";
+
+.l-footer {
+    background: var(--sub-color);
+    padding-block: 60px 28px;
+}
+
+.l-footer__inner {
+  inline-size: min(calc(1080px + clamp-vi(13, 180) * 2), 100%);
+  padding-inline: clamp-vi(13, 180);
+  margin-inline: auto;
+}
+
+.l-footer__top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.l-footer__logo {
+    inline-size: 272px;
+}
+
+.l-footer__info {
+    >address{
+        letter-spacing: 0.64px;
+        font-style: normal;
+    }
+}
+
+.l-footer__middle {
+    margin-block-start: 40px;
+}
+
+
+.l-footer__bottom {
+margin-block-start: 25px;
+}
+
+.l-footer__copy {
+    font-family: var(--ff-en);
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.6px;
+
+}
+
