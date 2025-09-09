@@ -2,9 +2,9 @@
 @use "sass:map";
 
 .p-topNews {
-  padding-block: 60px 160px;
+  padding-block: 60px 155px;
   @include mq(sp) {
-    padding-block-start: 60px 120px;
+    padding-block: 60px 118px;
   }
 }
 
@@ -41,7 +41,7 @@
     grid-area: list;
     display: flex;
     flex-direction: column;
-    gap: clamp-vi(16, 20);
+    gap: clamp-vi(14, 20);
 }
 
 .p-topNews__item {

@@ -38,3 +38,11 @@
         background: url(../img/ui/icons/icon-arrow-white.webp) no-repeat center center / contain;
     }
 }
+
+.c-button--blue {
+    color: var(--color-white);
+    background: var(--main-color);
+    &::before {
+        background: url(../img/ui/icons/icon-arrow-white.webp) no-repeat center center / contain;
+    }
+}

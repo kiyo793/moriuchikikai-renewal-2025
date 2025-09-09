@@ -1,0 +1,83 @@
+@use "../global" as *;
+@use "sass:map";
+
+.p-cta {
+  background: url(../img/content/cta/bg-cta.webp) no-repeat center center /
+    cover;
+}
+
+.p-cta__inner {
+  padding-block: 100px;
+}
+
+.p-cta__body {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+
+  grid-template-areas:
+    "heading heading"
+    "info button";
+
+  column-gap: 40px;
+  row-gap: 48px;
+
+  @include mq(sp) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.p-cta__heading {
+  grid-area: heading;
+}
+
+.c-cta__info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-white);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  @include mq(sp) {
+    margin-block-start: 48px;
+  }
+}
+
+.p-cta__tel {
+  padding-inline-start: 44px;
+  font-family: var(--ff-en);
+  font-size: 32px;
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  letter-spacing: 1.6px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    inline-size: 32px;
+    block-size: 32px;
+    inset-inline-start: 0;
+    inset-block-start: 50%;
+    translate: 0 -50%;
+    background: url(../img/ui/icons/icon-tel.webp) no-repeat center center /
+      contain;
+  }
+}
+
+.p-cta__time {
+  font-weight: var(--fw-mid);
+  letter-spacing: 0.64px;
+}
+
+.p-cta__actions {
+  grid-area: button;
+  @include mq(sp) {
+    margin-block-start: 32px;
+  }
+}
