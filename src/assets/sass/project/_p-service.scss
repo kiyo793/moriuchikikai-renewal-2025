@@ -1,0 +1,24 @@
+@use "../global" as *;
+@use "sass:map";
+
+.p-service {
+    padding-block: 60px 80px;
+}
+
+.p-service__inner{
+    @media (max-width: 500px) {
+        padding-inline: 0;
+    }
+}
+
+
+.p-service__body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.p-service__button {
+    margin-block-start: 61px;
+    text-align: center;
+}
