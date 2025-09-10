@@ -1,0 +1,32 @@
+@use "../global" as *;
+@use "sass:map";
+
+.c-delivery-card {
+    padding: 40px 32px;
+    border-radius: 32px;
+    box-shadow: 0 0 4px 0 rgba(47, 64, 80, 0.25);
+}
+
+.c-delivery-card__head {
+    margin-block-end: 20px;
+padding-block-end: 8px;
+border-block-end: 1px solid var(--accent-gray);
+}
+
+.c-delivery-card__title {
+    font-size: 20px;
+    font-weight: var(--fw-mid);
+    letter-spacing: 0.8px;
+}
+
+.c-delivery-card__image {
+    inline-size: 100%;
+    aspect-ratio: 456 / 300;
+    overflow: hidden;
+    img {
+        inline-size: 100%;
+        block-size: 100%;
+        object-fit: cover;
+    }
+}
+

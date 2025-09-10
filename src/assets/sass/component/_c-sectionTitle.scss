@@ -1,0 +1,35 @@
+@use "../global" as *;
+@use "sass:map";
+
+.c-sectionTitle {
+  text-align: center;
+  z-index: map.get($layer, "default");
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    inline-size: 30px;
+    block-size: 2px;
+    background: var(--main-color);
+    inset-block-end: -16px;
+    inset-inline-start: 50%;
+    translate: -50%;
+  }
+}
+
+.c-sectionTitle__en {
+  z-index: map.get($layer, "background");
+  color: #d2e9f0;
+  font-family: var(--ff-en);
+  font-size: 64px;
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  letter-spacing: 3.2px;
+}
+
+.c-sectionTitle__ja {
+  margin-block-start: -36px;
+  font-size: 32px;
+  font-weight: var(--fw-mid);
+  letter-spacing: 1.28px;
+}

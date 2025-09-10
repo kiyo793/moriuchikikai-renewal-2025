@@ -3,6 +3,9 @@
 
 .c-lead {
     padding-block: 80px 60px;
+    inline-size: min(calc(900px + 16px * 2), 100%);
+    padding-inline: 16px;
+    margin-inline: auto;
 
     display: flex;
     flex-direction: column;
@@ -11,3 +14,6 @@
     letter-spacing: 0.64px;
 }
 
+.c-lead__image {
+    margin-block-start: 32px;
+}

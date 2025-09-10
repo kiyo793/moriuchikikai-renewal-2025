@@ -1,0 +1,23 @@
+@use "../global" as *;
+@use "sass:map";
+
+.p-delivery {
+    padding-block: 60px 80px;
+}
+
+
+.p-delivery__heading {
+    margin-block-end: 76px;
+    display: flex;
+    justify-content: center;
+}
+
+.p-delivery__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    @include mq(sp) {
+      display: flex;
+      flex-direction: column;
+    }
+}
