@@ -2,7 +2,7 @@
 @use "sass:map";
 
 .p-topHero {
-  padding-block-start: calc(var(--header-height) + 16px);
+  padding-block-start: 16px;
   padding-block-end: clamp-vi(32, 40);
 }
 

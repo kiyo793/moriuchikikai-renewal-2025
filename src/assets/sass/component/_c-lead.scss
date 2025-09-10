@@ -1,0 +1,13 @@
+@use "../global" as *;
+@use "sass:map";
+
+.c-lead {
+    padding-block: 80px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+    letter-spacing: 0.64px;
+}
+

@@ -1,0 +1,41 @@
+@use "../global" as *;
+@use "sass:map";
+
+.c-breadcrumb {
+    padding: 20px;
+}
+
+.c-breadcrumb__list {
+    display: flex;
+    align-items: center;
+}
+
+.c-breadcrumb__item {
+    font-size: 12px;
+    letter-spacing: 0.48px
+}
+
+.c-breadcrumb__item + .c-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+}
+.c-breadcrumb__item + .c-breadcrumb__item::before {
+  content: "";
+  inline-size: 8px;
+  block-size: 16px;
+  background: url("../img/ui/icons/icon-arrow-breadcrumb.webp") no-repeat center / contain;
+  margin-inline: 12px;
+}
+
+.c-breadcrumb__link {
+  transition: opacity 0.3s;
+}
+
+.c-breadcrumb__link-text {
+    transition: opacity .3s;
+    &:hover {
+        @include mq(pc) {
+          opacity: .7;
+        }
+    }
+}
