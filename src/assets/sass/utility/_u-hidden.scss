@@ -11,6 +11,11 @@
             display: none;
         }
     }
+    &-lg {
+        @media (min-width: 1100px)  {
+            display: none;
+        }
+    }
     &-tab{
         @media (min-width: 768px) and (max-width: 1023px) {
             display: none;

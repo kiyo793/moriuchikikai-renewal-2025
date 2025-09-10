@@ -1,0 +1,26 @@
+@use "../global" as *;
+@use "sass:map";
+
+.p-products {
+    padding-block: 60px 80px;
+}
+
+.p-products__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: clamp-vi(15, 60, 1000, 1440);
+    row-gap: 60px;
+    @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-inline-size: 600px;
+        margin-inline: auto;
+    }
+}
+
+
+.p-products__button {
+    margin-block-start: 60px;
+    text-align: center;
+}
