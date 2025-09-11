@@ -1,8 +1,6 @@
 @use "../global" as *;
 @use "sass:map";
 
-.c-products-card {
-}
 
 .c-products-card__head {
   aspect-ratio: 67/49;
@@ -23,7 +21,7 @@
   @media (max-width: 500px) {
     flex-direction: column;
     gap: 0;
-    
+
   }
 }
 
