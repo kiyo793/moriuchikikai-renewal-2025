@@ -1,0 +1,60 @@
+@use "../global" as *;
+@use "sass:map";
+.c-definitionList {
+    line-height: 1.62;
+    @include mq(sp) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+}
+
+.c-definitionList__row {
+    display: flex;
+    letter-spacing: 0.64px;
+    @include mq(sp) {
+      flex-direction: column;
+    }
+}
+
+.c-definitionList__term {
+    padding: 24px 20px 25px;
+    inline-size: 200px;
+    border-block-end: 1px solid var(--main-color);
+    @include mq(sp) {
+      inline-size: 160px;
+      padding: 10px;
+    }
+}
+
+.c-definitionList__desc {
+    padding: 24px 20px 25px;
+    border-block-end: 1px solid var(--accent-gray);
+    flex: 1;
+    @include mq(sp) {
+      padding: 10px;
+    }
+
+}
+
+
+.c-definitionList__listBullet {
+    padding-inline-start: 17px;
+    line-height: 1.75;
+    @include mq(sp) {
+      padding-inline-start: 4px;
+    }
+    >li {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            inline-size: 3px;
+            block-size: 3px;
+            border-radius: 50%;
+            inset-block-start: 50%;
+            inset-inline-start: -10.5px;
+            background: var(--color-black);
+        }
+    }
+}

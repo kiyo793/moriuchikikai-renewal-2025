@@ -1,0 +1,53 @@
+@use "../global" as *;
+@use "sass:map";
+
+.p-access {
+    padding-block: 60px 77px;
+}
+
+.p-access__inner {
+
+}
+
+
+.p-access__heading {
+
+}
+
+.p-access__body {
+    margin-block-start: 96px;
+}
+
+.p-access__map {
+    inline-size: 100%;
+    block-size: 550px;
+    @include mq(sp) {
+      block-size: 350px;
+    }
+    >.map-fallback {
+        inline-size: 100%;
+        block-size: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.p-access__content {
+    margin-block-start: 19.5px;
+    letter-spacing: 0.64px;
+}
+
+.p-access__address {
+    font-style: normal;
+
+}
+
+.p-access__actions {
+margin-block-start: 19px;
+}
+
+.p-access__link {
+color: var(--main-color);
+text-decoration-line: underline;
+}
+

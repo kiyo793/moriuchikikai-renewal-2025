@@ -16,6 +16,12 @@
 .p-footer-nav__list {
   display: flex;
   gap: 23.5px;
+  &:last-child {
+    @include mq(pc) {
+      margin-block-start: -2px;
+      margin-inline-start: -5px;
+    }
+  }
 }
 
 .p-footer-nav__item:nth-last-child(-n+2) {

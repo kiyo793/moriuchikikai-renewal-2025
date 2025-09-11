@@ -10,6 +10,15 @@
     gap: 28px;
     text-align: center;
     letter-spacing: 0.64px;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+}
+
+.c-lead--compact {
+    gap: 0;
+    @include mq(sp) {
+      gap: 28px;
+    }
 }
 
 .c-lead__image {
