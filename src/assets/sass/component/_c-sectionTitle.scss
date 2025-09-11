@@ -27,9 +27,23 @@
   letter-spacing: 3.2px;
 }
 
+.c-sectionTitle__en--small {
+  @include mq(sp) {
+    font-size: 45px;
+  }
+}
+
 .c-sectionTitle__ja {
   margin-block-start: -36px;
   font-size: 32px;
   font-weight: var(--fw-mid);
   letter-spacing: 1.28px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.c-sectionTitle__ja--small {
+  @include mq(sp) {
+    font-size: 25px;
+  }
 }

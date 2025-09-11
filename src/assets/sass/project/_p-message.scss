@@ -1,0 +1,61 @@
+@use "../global" as *;
+@use "sass:map";
+
+.p-message {
+    padding-block: 80px 60px;
+    position: relative;
+    z-index: map.get($layer, "default");
+    overflow: hidden;
+    &::before {
+        z-index: map.get($layer, "background");
+        position: absolute;
+        content: "";
+        inline-size: 100%;
+        block-size: 100%;
+        inset-inline-start: 0;
+        inset-block-start: 40%;
+        background: var(--sub-color);
+        @include mq(sp) {
+          inset-block-start: 25%;
+        }
+    }
+
+}
+
+
+.p-message__body {
+    margin-block-start: 56px;
+}
+
+.p-message__image {
+    inline-size: 100%;
+    aspect-ratio: 1080/500;
+    border-radius: 32px;
+    overflow: hidden;
+    @include mq(sp) {
+        inline-size: calc(100% + clamp-vi(16, 40) * 2);
+      margin-inline: calc(clamp-vi(16, 40) * -1);
+    }
+    img {
+        inline-size: 100%;
+        block-size: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.p-message__text {
+    padding-block-start: 40px;
+    inline-size: min(900px, 100%);
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    >p {
+        font-weight: var(--fw-mid);
+        letter-spacing: 0.64px;
+    }
+}
+
+
