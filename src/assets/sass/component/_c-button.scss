@@ -46,3 +46,9 @@
         background: url(../img/ui/icons/icon-arrow-white.webp) no-repeat center center / contain;
     }
 }
+
+.c-button--postnav {
+    &::before {
+        background: url(../img/ui/icons/icon-back.webp) no-repeat center center / contain;
+    }
+}
