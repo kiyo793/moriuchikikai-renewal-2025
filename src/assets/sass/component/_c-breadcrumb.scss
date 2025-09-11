@@ -2,17 +2,19 @@
 @use "sass:map";
 
 .c-breadcrumb {
-    padding: 20px;
+  inline-size: min(1440px, 100%);
+  margin-inline: auto;
+  padding: 20px;
 }
 
 .c-breadcrumb__list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .c-breadcrumb__item {
-    font-size: 12px;
-    letter-spacing: 0.48px
+  font-size: 12px;
+  letter-spacing: 0.48px;
 }
 
 .c-breadcrumb__item + .c-breadcrumb__item {
@@ -23,7 +25,8 @@
   content: "";
   inline-size: 8px;
   block-size: 16px;
-  background: url("../img/ui/icons/icon-arrow-breadcrumb.webp") no-repeat center / contain;
+  background: url("../img/ui/icons/icon-arrow-breadcrumb.webp") no-repeat center /
+    contain;
   margin-inline: 12px;
 }
 
@@ -32,10 +35,10 @@
 }
 
 .c-breadcrumb__link-text {
-    transition: opacity .3s;
-    &:hover {
-        @include mq(pc) {
-          opacity: .7;
-        }
+  transition: opacity 0.3s;
+  &:hover {
+    @include mq(pc) {
+      opacity: 0.7;
     }
+  }
 }

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="no-index" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>株式会社森内機械製作所</title>
+    <meta name="description" content="" />
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      fetchpriority="high"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="./assets/lib/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css?ver" />
+    <script src="./assets/lib/gsap/gsap.min.js" defer></script>
+    <script src="./assets/lib/gsap/scrolltrigger.min.js" defer></script>
+    <script src="./assets/lib/jquery-3.7.1.min.js" defer></script>
+    <script src="./assets/lib/swiper-bundle.min.js" defer></script>
+    <script  src="./assets/js/main.min.js?ver" defer></script>
+  </head>
+  <body id="top">
+
+  <header class="l-header">
+    <div class="l-header__inner">
+      <h1 class="l-header__logo">
+        <a href="#" class="l-hader__logo-link">
+          <img src="./assets/img/ui/logos/company-logo.webp" alt="株式会社森内機械製作所" width="456" height="70">
+        </a>
+      </h1>
+
+      <nav class="l-gnav" aria-label="グローバルナビ">
+        <ul class="l-gnav__list">
+          <li class="l-gnav__item"><a href="#about" class="l-gnav__link l-gnav__link--text">事業内容</a></li>
+          <li class="l-gnav__item"><a href="#plant" class="l-gnav__link l-gnav__link--text">ごみ処理プラント</a></li>
+          <li class="l-gnav__item"><a href="#works" class="l-gnav__link l-gnav__link--text">実績紹介</a></li>
+          <li class="l-gnav__item"><a href="#company" class="l-gnav__link l-gnav__link--text">会社案内</a></li>
+          <li class="l-gnav__item"><a href="#recruit" class="l-gnav__link l-gnav__link--text">採用情報</a></li>
+          <li class="l-gnav__item"><a href="#news" class="l-gnav__link l-gnav__link--text">お知らせ</a></li>
+          <li class="l-gnav__item">
+            <a href="#" class="l-gnav__link l-gnav__link--icon" target="_blank" rel="noopener">
+              <img src="./assets/img/ui/icons/icon-facebook.webp" alt="FaceBook" width="62" height="62">
+            </a>
+          </li>
+          <li class="l-gnav__item">
+            <a href="#" class="l-gnav__button">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="c-drawer-icon" aria-label="メニューを開く">
+        <span class="c-drawer-icon__bar"></span>
+        <span class="c-drawer-icon__bar"></span>
+        <span class="c-drawer-icon__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="p-drawer">
+    <div class="p-drawer__body">
+      <ul class="p-drawer__list">
+        <li><a href="#about" class="p-drawer__link">事業内容</a></li>
+        <li><a href="#plant" class="p-drawer__link">ごみ処理プラント</a></li>
+        <li><a href="#works" class="p-drawer__link">実績紹介</a></li>
+        <li><a href="#company" class="p-drawer__link">会社案内</a></li>
+        <li><a href="#news" class="p-drawer__link">採用情報</a></li>
+        <li><a href="#recruit" class="p-drawer__link">お知らせ</a></li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="p-drawer__link p-drawer__link--icon">
+            <img src="./assets/img/ui/icons/icon-facebook.webp" alt="FaceBook" width="62" height="62">
+          </a>
+        </li>
+        <li><a href="/contact/" class="p-drawer__link p-drawer__button">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="l-main">
+
+  <!-- ==============================
+  HEADER
+================================= -->
+
+
+    <div class="p-pageHead">
+        <div class="p-pageHead__bg">
+        <img
+            src="./assets/img/content/company/page-header-company.webp"
+            alt="company-head"
+            width="2880"
+            height="2672"
+        />
+        </div>
+
+        <div class="p-pageHead__inner">
+        <div class="p-pageHead__body">
+            <h2 class="p-pageHead__en">NEWS</h2>
+            <div class="p-pageHead__ja">お知らせ</div>
+        </div>
+        </div>
+    </div>
+
+    <!-- パンくずリスト -->
+    <nav class="c-breadcrumb" aria-label="パンくずリスト">
+        <ol class="c-breadcrumb__list">
+            <li class="c-breadcrumb__item">
+                <a href="/" class="c-breadcrumb__link">TOP</a>
+            </li>
+            <li class="c-breadcrumb__item" aria-current="page">
+                <span class="current-page">お知らせ</span>
+            </li>
+        </ol>
+    </nav>
+    <!-- パンくずリスト -->
+
+    <section class="p-news">
+    <div class="p-news__inner l-inner--sm">
+
+        <ul class="p-news__list">
+
+            <li class="p-news__item">
+                <article class="p-news__article">
+                    <a class="p-news__link" href="#">
+                        <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                        <h3 class="p-news__title">
+                            ホームページがリニューアルオープンしました！
+                        </h3>
+                    </a>
+                </article>
+            </li>
+
+            <!-- 以下ダミー -->
+            <li class="p-news__item">
+            <article class="p-news__article">
+                <a class="p-news__link" href="#">
+                <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                <h3 class="p-news__title">
+                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                </h3>
+                </a>
+            </article>
+            </li>
+
+            <li class="p-news__item">
+            <article class="p-news__article">
+                <a class="p-news__link" href="#">
+                <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                <h3 class="p-news__title">
+                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                </h3>
+                </a>
+            </article>
+            </li>
+
+            <li class="p-news__item">
+            <article class="p-news__article">
+                <a class="p-news__link" href="#">
+                <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                <h3 class="p-news__title">
+                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                </h3>
+                </a>
+            </article>
+            </li>
+
+            <li class="p-news__item">
+            <article class="p-news__article">
+                <a class="p-news__link" href="#">
+                <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                <h3 class="p-news__title">
+                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                </h3>
+                </a>
+            </article>
+            </li>
+
+            <li class="p-news__item">
+            <article class="p-news__article">
+                <a class="p-news__link" href="#">
+                <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                <h3 class="p-news__title">
+                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                </h3>
+                </a>
+            </article>
+            </li>
+
+            <li class="p-news__item">
+            <article class="p-news__article">
+                <a class="p-news__link" href="#">
+                <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                <h3 class="p-news__title">
+                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                </h3>
+                </a>
+            </article>
+            </li>
+
+            <li class="p-news__item">
+            <article class="p-news__article">
+                <a class="p-news__link" href="#">
+                <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                <h3 class="p-news__title">
+                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                </h3>
+                </a>
+            </article>
+            </li>
+
+            <li class="p-news__item">
+            <article class="p-news__article">
+                <a class="p-news__link" href="#">
+                <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                <h3 class="p-news__title">
+                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                </h3>
+                </a>
+            </article>
+            </li>
+
+            <li class="p-news__item">
+            <article class="p-news__article">
+                <a class="p-news__link" href="#">
+                <time class="p-news__date" datetime="2025-00-00">2025.00.00.</time>
+                <h3 class="p-news__title">
+                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                </h3>
+                </a>
+            </article>
+            </li>
+
+        </ul>
+
+        <!-- ページネーション -->
+        <nav class="p-news__pagination" aria-label="ページナビゲーション">
+            <ul class="p-news__pager">
+                <li class="p-news__pagerItem">
+                 <a class="p-news__pagerBtn p-news__pagerBtn--prev" href="#" aria-label="前のページ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                        <path d="M6.46369 0.982533L0.781626 6.81153C0.681829 6.91391 0.625977 7.05123 0.625977 7.1942C0.625977 7.33718 0.681829 7.4745 0.781626 7.57688L6.46369 13.4081C6.51018 13.4558 6.56576 13.4938 6.62715 13.5197C6.68855 13.5456 6.75451 13.5589 6.82115 13.5589C6.88779 13.5589 6.95375 13.5456 7.01514 13.5197C7.07654 13.4938 7.13212 13.4558 7.17861 13.4081C7.27425 13.3102 7.3278 13.1787 7.3278 13.0418C7.3278 12.905 7.27425 12.7735 7.17861 12.6756L1.83536 7.1942L7.17861 1.7139C7.27393 1.61604 7.32727 1.48483 7.32727 1.34822C7.32727 1.2116 7.27393 1.08039 7.17861 0.982533C7.13212 0.934787 7.07654 0.896839 7.01514 0.870927C6.95375 0.845015 6.88779 0.831665 6.82115 0.831665C6.75451 0.831665 6.68855 0.845015 6.62715 0.870927C6.56576 0.896839 6.51018 0.934787 6.46369 0.982533Z" fill="white"/>
+                    </svg>
+                 </a>
+                </li>
+                <li class="p-news__pagerItem is-current">
+                    <span class="p-news__pagerBtn" aria-current="page">1</span>
+                </li>
+                <li class="p-news__pagerItem">
+                    <a class="p-news__pagerBtn" href="#">2</a>
+                </li>
+                <li class="p-news__pagerItem">
+                    <a class="p-news__pagerBtn" href="#">3</a>
+                </li>
+                <li class="p-news__pagerItem">
+                    <a class="p-news__pagerBtn p-news__pagerBtn--next" href="#" aria-label="次のページ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                            <path d="M1.49041 0.982533L7.17248 6.81153C7.27227 6.91391 7.32812 7.05123 7.32812 7.1942C7.32812 7.33718 7.27227 7.4745 7.17248 7.57688L1.49041 13.4081C1.44393 13.4558 1.38834 13.4938 1.32695 13.5197C1.26556 13.5456 1.19959 13.5589 1.13295 13.5589C1.06632 13.5589 1.00035 13.5456 0.938958 13.5197C0.877563 13.4938 0.821983 13.4558 0.775496 13.4081C0.679848 13.3102 0.6263 13.1787 0.6263 13.0418C0.6263 12.905 0.679848 12.7735 0.775496 12.6756L6.11874 7.1942L0.775496 1.7139C0.680176 1.61604 0.626835 1.48483 0.626835 1.34822C0.626835 1.2116 0.680176 1.08039 0.775496 0.982533C0.821983 0.934787 0.877563 0.896839 0.938958 0.870927C1.00035 0.845015 1.06632 0.831665 1.13295 0.831665C1.19959 0.831665 1.26556 0.845015 1.32695 0.870927C1.38834 0.896839 1.44393 0.934787 1.49041 0.982533Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    </section>
+
+
+
+
+
+  <!-- ==============================
+  FOOTER
+================================= -->
+</main>
+
+  <section class="p-cta">
+    <div class="p-cta__inner">
+
+      <div class="p-cta__body">
+
+        <div class="p-cta__heading">
+          <div class="c-heading c-heading--white c-heading--center">
+            <h2 class="c-heading__en">CONTACT</h2>
+            <p class="c-heading__ja">お問い合わせ</p>
+          </div>
+        </div>
+
+        <div class="c-cta__info">
+          <p class="p-cta__tel">072-653-3109</p>
+          <div class="p-cta__time">受付時間：平日8時～17時</div>
+        </div>
+
+        <div class="p-cta__actions">
+          <a href="#" class="c-button c-button--blue">メールでのお問い合わせ</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="l-footer">
+    <div class="l-footer__inner">
+
+      <div class="l-footer__top">
+        <a href="#" class="l-footer__logo">
+          <img src="./assets/img/ui/logos/company-logo.webp" alt="株式会社森内機械製作所" width="456" height="70">
+        </a>
+          <div class="l-footer__info">
+            <address>
+              〒566-0052　大阪府摂津市鳥飼本町5-9−3<br>
+              TEL：<a href="tel:0726533109">072-653-3109</a><br>
+              FAX：072-653-3104
+            </address>
+          </div>
+      </div>
+
+      <nav class="l-footer__middle p-footer-nav" aria-label="フッターナビゲーション">
+        <ul class="p-footer-nav__list" aria-label="事業メニュー">
+          <li class="p-footer-nav__item"><a href="#" class="p-footer-nav__link">事業内容</a></li>
+          <li class="p-footer-nav__item"><a href="#" class="p-footer-nav__link">ごみ処理プラント</a></li>
+          <li class="p-footer-nav__item"><a href="#" class="p-footer-nav__link">事業紹介</a></li>
+        </ul>
+
+        <ul class="p-footer-nav__list" aria-label="企業情報">
+          <li class="p-footer-nav__item"><a href="#" class="p-footer-nav__link">会社案内</a></li>
+          <li class="p-footer-nav__item"><a href="#" class="p-footer-nav__link">採用情報</a></li>
+          <li class="p-footer-nav__item"><a href="#" class="p-footer-nav__link">お知らせ</a></li>
+        </ul>
+
+        <ul class="p-footer-nav__list" aria-label="お問い合わせ">
+          <li class="p-footer-nav__item"><a href="#" class="p-footer-nav__link">お問い合わせ</a></li>
+        </ul>
+
+        <ul class="p-footer-nav__list" aria-label="SNS">
+          <li class="p-footer-nav__item">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="p-footer-nav__link p-footer-nav__link--icon">
+              <img src="./assets/img/ui/icons/icon-facebook.webp" alt="Facebook" width="62" height="62">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="l-footer__bottom">
+        <small class="l-footer__copy">Copyright &copy; moriuchi machine Co.,Ltd. All rights reserved.</small>
+      </div>
+
+    </div>
+  </footer>
+
+  </body>
+</html>

@@ -6,3 +6,9 @@
     padding-inline: clamp-vi(16, 40);
     margin-inline: auto;
 }
+
+.l-inner--sm {
+    inline-size: min(calc(900px + clamp-vi(16, 40) * 2), 100%);
+    padding-inline: clamp-vi(16, 40);
+    margin-inline: auto;
+}
