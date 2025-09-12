@@ -20,7 +20,7 @@
           </div>
 
           <div class="p-cta__actions">
-            <a href="#" class="c-button c-button--blue"
+            <a href="<?php home_url(); ?>/contact" class="c-button c-button--blue"
               >メールでのお問い合わせ</a
             >
           </div>
@@ -31,7 +31,7 @@
     <footer class="l-footer">
       <div class="l-footer__inner" data-animation="fade-in">
         <div class="l-footer__top">
-          <a href="#" class="l-footer__logo">
+          <a href="<?php home_url(); ?>/" class="l-footer__logo">
             <img
               src="<?php echo get_template_directory_uri(); ?>/assets/img/ui/logos/company-logo.webp"
               alt="株式会社森内機械製作所"
@@ -54,38 +54,38 @@
         >
           <ul class="p-footer-nav__list" aria-label="事業メニュー">
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">事業内容</a>
+              <a href="<?php home_url(); ?>/service" class="p-footer-nav__link">事業内容</a>
             </li>
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">ごみ処理プラント</a>
+              <a href="<?php home_url(); ?>/garbage-treatment-plant" class="p-footer-nav__link">ごみ処理プラント</a>
             </li>
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">事業紹介</a>
+              <a href="<?php home_url(); ?>/products" class="p-footer-nav__link">実績紹介</a>
             </li>
           </ul>
 
           <ul class="p-footer-nav__list" aria-label="企業情報">
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">会社案内</a>
+              <a href="<?php home_url(); ?>/company" class="p-footer-nav__link">会社案内</a>
             </li>
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">採用情報</a>
+              <a href="<?php home_url(); ?>/recruit" class="p-footer-nav__link">採用情報</a>
             </li>
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">お知らせ</a>
+              <a href="<?php home_url(); ?>/news" class="p-footer-nav__link">お知らせ</a>
             </li>
           </ul>
 
           <ul class="p-footer-nav__list" aria-label="お問い合わせ">
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">お問い合わせ</a>
+              <a href="<?php home_url(); ?>/contact" class="p-footer-nav__link">お問い合わせ</a>
             </li>
           </ul>
 
           <ul class="p-footer-nav__list" aria-label="SNS">
             <li class="p-footer-nav__item">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/moriuchimachine/"
                 target="_blank"
                 rel="noopener"
                 class="p-footer-nav__link p-footer-nav__link--icon"

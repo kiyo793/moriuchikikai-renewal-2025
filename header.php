@@ -8,31 +8,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <?php wp_head(); ?>
   </head>
-  <body id="top">
+  <body id="top" <?php body_class(); ?>>
 
   <header class="l-header">
     <div class="l-header__inner">
       <h1 class="l-header__logo">
-        <a href="#" class="l-hader__logo-link">
+        <a href="<?php home_url(); ?>/" class="l-hader__logo-link">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ui/logos/company-logo.webp" alt="株式会社森内機械製作所" width="456" height="70">
         </a>
       </h1>
 
       <nav class="l-gnav" aria-label="グローバルナビ">
         <ul class="l-gnav__list">
-          <li class="l-gnav__item"><a href="#about" class="l-gnav__link l-gnav__link--text">事業内容</a></li>
-          <li class="l-gnav__item"><a href="#plant" class="l-gnav__link l-gnav__link--text">ごみ処理プラント</a></li>
-          <li class="l-gnav__item"><a href="#works" class="l-gnav__link l-gnav__link--text">実績紹介</a></li>
-          <li class="l-gnav__item"><a href="#company" class="l-gnav__link l-gnav__link--text">会社案内</a></li>
-          <li class="l-gnav__item"><a href="#recruit" class="l-gnav__link l-gnav__link--text">採用情報</a></li>
-          <li class="l-gnav__item"><a href="#news" class="l-gnav__link l-gnav__link--text">お知らせ</a></li>
+          <li class="l-gnav__item"><a href="<?php home_url(); ?>/service" class="l-gnav__link l-gnav__link--text">事業内容</a></li>
+          <li class="l-gnav__item"><a href="<?php home_url(); ?>/garbage-treatment-plant" class="l-gnav__link l-gnav__link--text">ごみ処理プラント</a></li>
+          <li class="l-gnav__item"><a href="<?php home_url(); ?>/products" class="l-gnav__link l-gnav__link--text">実績紹介</a></li>
+          <li class="l-gnav__item"><a href="<?php home_url(); ?>/company" class="l-gnav__link l-gnav__link--text">会社案内</a></li>
+          <li class="l-gnav__item"><a href="<?php home_url(); ?>/recruit" class="l-gnav__link l-gnav__link--text">採用情報</a></li>
+          <li class="l-gnav__item"><a href="<?php home_url(); ?>/news" class="l-gnav__link l-gnav__link--text">お知らせ</a></li>
           <li class="l-gnav__item">
-            <a href="#" class="l-gnav__link l-gnav__link--icon" target="_blank" rel="noopener">
+            <a href="https://www.facebook.com/moriuchimachine/" class="l-gnav__link l-gnav__link--icon" target="_blank" rel="noopener">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ui/icons/icon-facebook.webp" alt="FaceBook" width="62" height="62">
             </a>
           </li>
           <li class="l-gnav__item">
-            <a href="#" class="l-gnav__button">お問い合わせ</a>
+            <a href="<?php home_url(); ?>/contact" class="l-gnav__button">お問い合わせ</a>
           </li>
         </ul>
       </nav>
@@ -47,18 +47,18 @@
   <div class="p-drawer">
     <div class="p-drawer__body">
       <ul class="p-drawer__list">
-        <li><a href="#about" class="p-drawer__link">事業内容</a></li>
-        <li><a href="#plant" class="p-drawer__link">ごみ処理プラント</a></li>
-        <li><a href="#works" class="p-drawer__link">実績紹介</a></li>
-        <li><a href="#company" class="p-drawer__link">会社案内</a></li>
-        <li><a href="#news" class="p-drawer__link">採用情報</a></li>
-        <li><a href="#recruit" class="p-drawer__link">お知らせ</a></li>
+        <li><a href="<?php home_url(); ?>/service" class="p-drawer__link">事業内容</a></li>
+        <li><a href="<?php home_url(); ?>/garbage-treatment-plant" class="p-drawer__link">ごみ処理プラント</a></li>
+        <li><a href="<?php home_url(); ?>/products" class="p-drawer__link">実績紹介</a></li>
+        <li><a href="<?php home_url(); ?>/company" class="p-drawer__link">会社案内</a></li>
+        <li><a href="<?php home_url(); ?>/recruit" class="p-drawer__link">採用情報</a></li>
+        <li><a href="<?php home_url(); ?>/news" class="p-drawer__link">お知らせ</a></li>
         <li>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="p-drawer__link p-drawer__link--icon">
+          <a href="https://www.facebook.com/moriuchimachine/" target="_blank" rel="noopener" class="p-drawer__link p-drawer__link--icon">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ui/icons/icon-facebook.webp" alt="FaceBook" width="62" height="62">
           </a>
         </li>
-        <li><a href="/contact/" class="p-drawer__link p-drawer__button">お問い合わせ</a></li>
+        <li><a href="<?php home_url(); ?>/contact" class="p-drawer__link p-drawer__button">お問い合わせ</a></li>
       </ul>
     </div>
   </div>

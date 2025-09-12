@@ -23,18 +23,13 @@ Template Name: 実績紹介
       </div>
     </div>
 
-    <!-- パンくずリスト -->
-    <nav class="c-breadcrumb" aria-label="パンくずリスト">
-      <ol class="c-breadcrumb__list">
-        <li class="c-breadcrumb__item">
-          <a href="/" class="c-breadcrumb__link">TOP</a>
-        </li>
-        <li class="c-breadcrumb__item" aria-current="page">
-          <span class="current-page">実績紹介</span>
-        </li>
-      </ol>
-    </nav>
-    <!-- パンくずリスト -->
+    <?php if ( function_exists( 'bcn_display' ) ) : ?>
+      <nav class="c-breadcrumb" aria-label="パンくずリスト">
+        <ol class="c-breadcrumb__list">
+          <?php bcn_display(); ?>
+        </ol>
+      </nav>
+    <?php endif; ?>
 
     <div class="c-lead c-lead--compact" data-animation="fade-in">
       <p>
@@ -320,7 +315,7 @@ Template Name: 実績紹介
         </div>
 
         <div class="p-products__button">
-          <a href="#" class="c-button c-button--white" data-animation="fade-in">ごみ処理プラントについて</a>
+          <a href="<?php home_url(); ?>/garbage-treatment-plant" class="c-button c-button--white" data-animation="fade-in">ごみ処理プラントについて</a>
         </div>
       </div>
     </section>

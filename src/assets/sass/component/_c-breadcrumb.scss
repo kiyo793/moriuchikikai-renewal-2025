@@ -38,3 +38,8 @@
     }
   }
 }
+
+//投稿ページだけタイトルを非表示
+.single .c-breadcrumb__item:last-child {
+  display: none;
+}

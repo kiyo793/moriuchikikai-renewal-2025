@@ -23,18 +23,13 @@ Template Name: 事業内容
       </div>
     </div>
 
-    <!-- パンくずリスト -->
-    <nav class="c-breadcrumb" aria-label="パンくずリスト">
-      <ol class="c-breadcrumb__list">
-        <li class="c-breadcrumb__item">
-          <a href="/" class="c-breadcrumb__link">TOP</a>
-        </li>
-        <li class="c-breadcrumb__item" aria-current="page">
-          <span class="current-page">事業内容</span>
-        </li>
-      </ol>
-    </nav>
-    <!-- パンくずリスト -->
+    <?php if ( function_exists( 'bcn_display' ) ) : ?>
+      <nav class="c-breadcrumb" aria-label="パンくずリスト">
+        <ol class="c-breadcrumb__list">
+          <?php bcn_display(); ?>
+        </ol>
+      </nav>
+    <?php endif; ?>
 
     <div class="c-lead" data-animation="fade-in">
       <p>
@@ -219,12 +214,11 @@ Template Name: 事業内容
                   height="652"
                   loading="lazy" />
               </div>
-            </div>
           </div>
         </div>
 
         <div class="p-service__button" data-animation="fade-in">
-          <a href="#" class="c-button c-button--white">実績紹介を見る</a>
+          <a href="<?php home_url(); ?>/products" class="c-button c-button--white">実績紹介を見る</a>
         </div>
       </div>
     </section>

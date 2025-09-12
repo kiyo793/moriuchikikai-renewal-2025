@@ -17,18 +17,13 @@
       </div>
     </div>
 
-    <!-- パンくずリスト -->
-    <nav class="c-breadcrumb" aria-label="パンくずリスト">
-      <ol class="c-breadcrumb__list">
-        <li class="c-breadcrumb__item">
-          <a href="/" class="c-breadcrumb__link">TOP</a>
-        </li>
-        <li class="c-breadcrumb__item" aria-current="page">
-          <span class="current-page">お知らせ</span>
-        </li>
-      </ol>
-    </nav>
-    <!-- パンくずリスト -->
+    <?php if ( function_exists( 'bcn_display' ) ) : ?>
+      <nav class="c-breadcrumb" aria-label="パンくずリスト">
+        <ol class="c-breadcrumb__list">
+          <?php bcn_display(); ?>
+        </ol>
+      </nav>
+    <?php endif; ?>
 
     <section class="p-singleNews" data-animation="fade-in">
       <div class="p-singleNews__inner l-inner--sm">

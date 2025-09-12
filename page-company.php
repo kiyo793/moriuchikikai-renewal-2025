@@ -23,18 +23,13 @@ Template Name: 会社案内
       </div>
     </div>
 
-    <!-- パンくずリスト -->
-    <nav class="c-breadcrumb" aria-label="パンくずリスト">
-      <ol class="c-breadcrumb__list">
-        <li class="c-breadcrumb__item">
-          <a href="/" class="c-breadcrumb__link">TOP</a>
-        </li>
-        <li class="c-breadcrumb__item" aria-current="page">
-          <span class="current-page">会社案内</span>
-        </li>
-      </ol>
-    </nav>
-    <!-- パンくずリスト -->
+    <?php if ( function_exists( 'bcn_display' ) ) : ?>
+      <nav class="c-breadcrumb" aria-label="パンくずリスト">
+        <ol class="c-breadcrumb__list">
+          <?php bcn_display(); ?>
+        </ol>
+      </nav>
+    <?php endif; ?>
 
     <div class="c-lead c-lead--compact" data-animation="fade-in">
       <p>
