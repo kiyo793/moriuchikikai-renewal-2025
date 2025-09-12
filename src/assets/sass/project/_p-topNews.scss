@@ -56,10 +56,16 @@
   align-items: center;
   gap: 32px;
   border-bottom: 1px solid var(--color-darkgray);
+  transition: all 0.3s;
   @include mq(sp) {
     flex-direction: column;
     align-items: start;
     gap: 12px;
+  }
+  @include mq(pc) {
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 

@@ -155,3 +155,79 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//お問い合わせ送信ボタン
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.querySelector(".p-contact__form");
+  const requiredFields = form.querySelectorAll("[required]");
+  const submitBtn = form.querySelector("button[type='submit']");
+
+  function checkRequired() {
+    let allFilled = true;
+    
+    requiredFields.forEach(field => {
+
+      if (field.type === 'checkbox') {
+        if (!field.checked) {
+          allFilled = false;
+        }
+      } else {
+
+        if (!field.value.trim()) {
+          allFilled = false;
+        }
+      }
+    });
+
+    submitBtn.disabled = !allFilled;
+  }
+
+
+  submitBtn.disabled = true;
+
+
+  requiredFields.forEach(field => {
+    if (field.type === 'checkbox') {
+
+      field.addEventListener("change", checkRequired);
+    } else {
+
+      field.addEventListener("input", checkRequired);
+    }
+  });
+});
+
+//アニメーション
+class FadeAnimationObserver {
+    constructor() {
+        this.observer = new IntersectionObserver(
+            this.handleIntersection.bind(this),
+            {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            }
+        );
+        this.init();
+    }
+
+    init() {
+        const animationElements = document.querySelectorAll('[data-animation]');
+        animationElements.forEach(el => {
+            this.observer.observe(el);
+        });
+    }
+
+    handleIntersection(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-animated');
+                this.observer.unobserve(entry.target);
+            }
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    new FadeAnimationObserver();
+});

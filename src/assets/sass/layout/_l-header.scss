@@ -47,6 +47,8 @@
     font-weight: var(--fw-mid);
     line-height: 1;
     letter-spacing: 0.64px;
+    position: relative;
+    
   &--text {
     padding-block: 16px;
   }
@@ -54,7 +56,33 @@
     display: inline-block;
     inline-size: 32px;
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    inset-inline-start: 0;
+    inset-block-end: 5px;
+    inline-size: 100%;
+    block-size: 3px;
+    background: var(--main-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+  }
 }
+
+.l-gnav__link:hover {
+  @include mq(pc) {
+    &::after {
+  visibility: visible;
+  animation-name: fadein-bottom;
+  animation-duration: .8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+    }
+  }
+}
+
 
 .l-gnav__button {
     padding: 13px 32px;
@@ -63,4 +91,10 @@
     color: var(--color-white);
     font-weight: var(--fw-bold);
     letter-spacing: 0.64px;
+    transition: all 0.3s;
+    @include mq(pc) {
+        &:hover {
+        opacity: 0.7;
+      }
+    }
 }

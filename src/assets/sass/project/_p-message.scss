@@ -55,6 +55,8 @@
     >p {
         font-weight: var(--fw-mid);
         letter-spacing: 0.64px;
+        word-break: keep-all;
+        overflow-wrap: anywhere;
     }
 }
 

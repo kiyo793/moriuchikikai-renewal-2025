@@ -2,7 +2,7 @@
 @use "sass:map";
 
 .c-delivery-card {
-    padding: 40px 32px;
+    padding: clamp-vi(20, 40) clamp-vi(20, 32);
     border-radius: 32px;
     box-shadow: 0 0 4px 0 rgba(47, 64, 80, 0.25);
 }

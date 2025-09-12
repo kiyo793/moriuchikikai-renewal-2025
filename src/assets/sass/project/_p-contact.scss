@@ -1,0 +1,260 @@
+@use "../global" as *;
+@use "sass:map";
+
+.p-contact {
+  padding-block: 80px 180px;
+}
+
+.p-contact__inner {
+}
+
+.p-contact__lead {
+  text-align: center;
+  letter-spacing: 0.64px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  @include mq(sp) {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+}
+
+.p-contact__telBox {
+  margin-block-start: 80px;
+  padding-block: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: var(--sub-color);
+}
+
+.p-contact__telLead {
+  padding: 8px 40px;
+  background: var(--color-white);
+  font-size: 20px;
+  font-weight: var(--fw-mid);
+  letter-spacing: 0.8px;
+}
+
+.p-contact__telNum {
+  margin-block-start: 40px;
+  padding-inline-start: 44px;
+  font-family: var(--ff-en);
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 1.6px;
+  position: relative;
+  > a {
+    font-weight: var(--fw-bold);
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    inline-size: 32px;
+    block-size: 32px;
+    inset-inline-start: 0;
+    inset-block-start: 50%;
+    translate: 0 -58%;
+    background: url(../img/ui/icons/icon-tel-blue.webp) no-repeat center center /
+      contain;
+  }
+}
+
+.p-contact__telTime {
+  margin-block-start: 7px;
+  font-weight: var(--fw-mid);
+  letter-spacing: 0.64px;
+}
+
+.p-contact__head {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 120px;
+  > h2 {
+    padding: 8px 40px;
+    background: var(--sub-color);
+    font-size: 20px;
+    font-weight: var(--fw-mid);
+    letter-spacing: 0.8px;
+  }
+}
+
+.p-contact__form {
+  margin-block-start: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.p-contact__formItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-contact__label {
+  padding-block: 12px;
+  font-weight: var(--fw-mid);
+  line-height: 2;
+  letter-spacing: 0.64px;
+  display: flex;
+  align-items: center;
+}
+
+.p-contact__input {
+  border: 1px solid var(--color-black);
+  padding: 16px 32px;
+  letter-spacing: 0.64px;
+  &::placeholder {
+    color: var(--color-darkgray);
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--main-color);
+  }
+  @include mq(sp) {
+    padding: 16px;
+  }
+}
+
+.is-required {
+}
+
+.p-contact__required {
+  margin-inline-start: 24px;
+  padding: 4px 17.5px;
+  background: #e95050;
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: var(--fw-mid);
+  line-height: 2;
+  letter-spacing: 0.48px;
+}
+
+.p-contact__textarea {
+  padding: 16px 32px;
+  letter-spacing: 0.64px;
+  min-inline-size: 100%;
+  max-inline-size: 100%;
+  block-size: 301px;
+  border: 1px solid var(--color-black);
+  &::placeholder {
+    color: var(--color-darkgray);
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--main-color);
+  }
+  @include mq(sp) {
+    padding: 16px;
+  }
+}
+
+.p-contact__policy {
+}
+
+.p-contact__policyBox {
+  block-size: 136px;
+  padding: 12px 20px;
+  overflow-y: scroll;
+  border: 1px solid var(--color-black);
+  @include mq(sp) {
+    padding: 10px;
+  }
+}
+
+.p-contact__policyWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 28.8px;
+}
+
+.p-contact__policyText {
+  letter-spacing: 0.64px;
+}
+
+.p-contact__policyList {
+  > li {
+    margin-inline-start: 17px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      inline-size: 3px;
+      block-size: 3px;
+      border-radius: 50%;
+      inset-block-start: 13px;
+      inset-inline-start: -10.5px;
+      background: var(--color-black);
+    }
+  }
+}
+
+.p-contact__checkboxLabel {
+  margin-block-start: 12px;
+  letter-spacing: 0.64px;
+}
+
+.p-contact__checkbox {
+  inline-size: 1px;
+  block-size: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  &:checked {
+    + .p-contact__checkboxText {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.p-contact__checkboxText {
+  letter-spacing: 0.64px;
+  margin-inline-start: 40px;
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+  &::before {
+    inline-size: 20px;
+    block-size: 20px;
+    inset-inline-start: -40px;
+    inset-block-start: 50%;
+    translate: 0 -50%;
+    border: 1px solid var(--color-black);
+  }
+  &::after {
+    inline-size: 20px;
+    block-size: 20px;
+    inset-block-start: 50%;
+    translate: 0 -50%;
+    inset-inline-start: -40px;
+    background: url(../img/ui/icons/icon-check.webp) no-repeat center center /
+      contain;
+    opacity: 0;
+  }
+}
+.p-contact__checkbox:focus + .p-contact__checkboxText::before {
+  border-color: var(--main-color);
+}
+
+.p-contact__submit {
+  margin-block-start: 44px;
+  display: inline-block;
+  align-self: center;
+}
+.p-contact__submit button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.p-contact__button {
+  margin-block-start: 60px;
+  text-align: center;
+}

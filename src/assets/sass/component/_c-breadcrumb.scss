@@ -32,10 +32,6 @@
 
 .c-breadcrumb__link {
   transition: opacity 0.3s;
-}
-
-.c-breadcrumb__link-text {
-  transition: opacity 0.3s;
   &:hover {
     @include mq(pc) {
       opacity: 0.7;

@@ -49,15 +49,26 @@ font-weight: var(--fw-mid);
 letter-spacing: 0.96px;
 @media (max-width: 850px) {
     letter-spacing: 0.8px;
+    margin-block-start: 3px;
 }
 }
 
 .c-service-media__list {
-    >ul {
-        list-style: disc outside;
-        padding-inline-start: 20px;
-        letter-spacing: 0.64px;
+    letter-spacing: 0.64px;
+  > ul >li {
+    margin-inline-start: 24px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      inline-size: 4px;
+      block-size: 4px;
+      border-radius: 50%;
+      inset-block-start: 13.5px;
+      inset-inline-start: -14px;
+      background: var(--color-black);
     }
+  }
 }
 
 .c-service-media__image {

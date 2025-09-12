@@ -21,6 +21,10 @@
     }
 }
 
+.c-lead--space {
+    gap: 28px;
+}
+
 .c-lead__image {
     inline-size: min(calc(900px + 16px * 2), 100%);
     margin-inline: auto;
