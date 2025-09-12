@@ -4,30 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="robots" content="no-index" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>株式会社森内機械製作所</title>
-    <meta name="description" content="" />
-    <link rel="icon" href="data:," />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      fetchpriority="high"
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link rel="stylesheet" href="./assets/lib/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.min.css?ver" />
-    <script src="./assets/lib/gsap/gsap.min.js" defer></script>
-    <script src="./assets/lib/gsap/scrolltrigger.min.js" defer></script>
-    <script src="./assets/lib/jquery-3.7.1.min.js" defer></script>
-    <script src="./assets/lib/swiper-bundle.min.js" defer></script>
-    <script  src="./assets/js/main.min.js?ver" defer></script>
+    <?php wp_head(); ?>
   </head>
   <body id="top">
 
@@ -35,7 +14,7 @@
     <div class="l-header__inner">
       <h1 class="l-header__logo">
         <a href="#" class="l-hader__logo-link">
-          <img src="./assets/img/ui/logos/company-logo.webp" alt="株式会社森内機械製作所" width="456" height="70">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ui/logos/company-logo.webp" alt="株式会社森内機械製作所" width="456" height="70">
         </a>
       </h1>
 
@@ -49,7 +28,7 @@
           <li class="l-gnav__item"><a href="#news" class="l-gnav__link l-gnav__link--text">お知らせ</a></li>
           <li class="l-gnav__item">
             <a href="#" class="l-gnav__link l-gnav__link--icon" target="_blank" rel="noopener">
-              <img src="./assets/img/ui/icons/icon-facebook.webp" alt="FaceBook" width="62" height="62">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ui/icons/icon-facebook.webp" alt="FaceBook" width="62" height="62">
             </a>
           </li>
           <li class="l-gnav__item">
@@ -76,7 +55,7 @@
         <li><a href="#recruit" class="p-drawer__link">お知らせ</a></li>
         <li>
           <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="p-drawer__link p-drawer__link--icon">
-            <img src="./assets/img/ui/icons/icon-facebook.webp" alt="FaceBook" width="62" height="62">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ui/icons/icon-facebook.webp" alt="FaceBook" width="62" height="62">
           </a>
         </li>
         <li><a href="/contact/" class="p-drawer__link p-drawer__button">お問い合わせ</a></li>
