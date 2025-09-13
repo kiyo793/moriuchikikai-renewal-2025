@@ -162,7 +162,7 @@
       </ul>
 
       <div class="p-topContentsNav__actions">
-        <a href="<?php home_url(); ?>/news" class="c-button c-button--white">詳しく見る</a>
+        <a href="<?php echo home_url(); ?>/news" class="c-button c-button--white">詳しく見る</a>
       </div>
     </div>
   </div>
