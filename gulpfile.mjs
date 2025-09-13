@@ -6,7 +6,6 @@ import autoprefixer from "autoprefixer";
 import cssSorter from "css-declaration-sorter";
 import nmq from "gulp-merge-media-queries";
 import browserSyncModule from "browser-sync";
-import htmlBeautify from "gulp-html-beautify";
 import cleanCss from "gulp-clean-css";
 import uglify from "gulp-uglify";
 import crypto from "crypto";
@@ -21,10 +20,9 @@ const browserSync = browserSyncModule.create();
 const sass = gulpSass(dartSass);
 const hash = crypto.randomBytes(8).toString("hex");
 
-// WordPress用のパス設定
 const paths = {
   images: "src/assets/img/**/*.{jpg,jpeg,png}",
-  output: "assets/img", // WordPressテーマのassetsフォルダ
+  output: "assets/img",
   sass: "src/assets/sass/**/*.scss",
   sassOutput: "assets/css/",
   js: "src/assets/js/**/*.js",
@@ -33,14 +31,14 @@ const paths = {
   libOutput: "assets/lib/"
 };
 
-// libフォルダをコピー
+// libフォルダ
 export function copyLib() {
   return gulp
     .src(paths.lib)
     .pipe(gulp.dest(paths.libOutput));
 }
 
-// CSSコンパイル（WordPress用）
+// CSSコンパイル
 export function compileSass() {
   return gulp
     .src(paths.sass)
@@ -53,7 +51,7 @@ export function compileSass() {
     .pipe(gulp.dest(paths.sassOutput));
 }
 
-// JS圧縮（WordPress用）
+// JS圧縮
 export function minJS() {
   return gulp
     .src(paths.js)
@@ -63,20 +61,12 @@ export function minJS() {
     .pipe(gulp.dest(paths.jsOutput));
 }
 
-// HTML整形（WordPressでは通常不要なのでコメントアウト）
-// export function formatHTML() {
-//   return gulp
-//     .src("./src/**/*.html")
-//     .pipe(htmlBeautify({ indent_size: 2, indent_with_tabs: true }))
-//     .pipe(gulp.dest("./public"));
-// }
 
-// WordPress用 - PHPファイルの監視とリロード
 export function watchPHP() {
   return gulp.watch("./**/*.php", browserReload);
 }
 
-// キャッシュバスティング（WordPress用 - PHPファイル対象）
+// キャッシュバスティング
 export function cacheBusting() {
   return gulp
     .src("./**/*.php")
@@ -84,7 +74,7 @@ export function cacheBusting() {
     .pipe(gulp.dest("./"));
 }
 
-// 画像リサイズ（WordPress用パス）
+// 画像リサイズ
 export function resizeImages() {
   return gulp
     .src(paths.images, { encoding: false })
@@ -118,7 +108,7 @@ export function resizeImages() {
     .pipe(gulp.dest(paths.output));
 }
 
-// SVG画像をそのままコピー（WordPress用パス）
+// SVG画像をそのままコピー
 export function copySvgImages() {
     return gulp
       .src("src/assets/img/**/*.svg")
@@ -126,13 +116,13 @@ export function copySvgImages() {
       .pipe(gulp.dest(paths.output));
 }
 
-// ブラウザSync 初期化＆リロード（WordPress用）
+// ブラウザSync
 export function browserInit(done) {
   browserSync.init({
     proxy: "http://localhost/your-wp-site", // WordPressのローカル環境URLに変更
     // または以下のようにポート指定
     // proxy: "localhost:8080", // MAMPやXAMPPのポート番号に合わせる
-    port: 3001, // BrowserSyncのポート（WordPressと被らないように）
+    port: 3001,
     open: false,
     notify: false
   });
@@ -144,25 +134,23 @@ export function browserReload(done) {
   done();
 }
 
-// ウォッチ（WordPress用 - HTMLの代わりにPHPを監視）
+// ウォッチ
 export function watchFiles() {
   gulp.watch(paths.sass, gulp.series(compileSass, browserReload));
   gulp.watch(paths.js, gulp.series(minJS, browserReload));
   gulp.watch("./src/assets/img/**/*", gulp.series(resizeImages, browserReload));
   gulp.watch("./src/assets/img/**/*.svg", gulp.series(copySvgImages, browserReload));
-  gulp.watch("./**/*.php", browserReload); // PHPファイルの変更を監視
-  gulp.watch("./style.css", browserReload); // WordPressのstyle.cssも監視
+  gulp.watch("./**/*.php", browserReload);
+  gulp.watch("./style.css", browserReload);
 }
 
-// タスク定義（WordPress用 - HTMLタスクを除外）
 const build = gulp.parallel(resizeImages, copySvgImages, compileSass, minJS, copyLib);
 const dev = gulp.series(build, gulp.parallel(browserInit, watchFiles));
 
 export {
   resizeImages as minImage,
   minJS as minJs,
-  // formatHTML as html, // WordPress用にコメントアウト
   cacheBusting as cache,
-  dev, // ブラウザを立ち上げる　npx gulp dev
-  build, // ビルドする　npx gulp build
+  dev,
+  build,
 };
