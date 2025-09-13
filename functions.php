@@ -74,6 +74,7 @@ function my_script_init() {
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
+add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
 
 ?>

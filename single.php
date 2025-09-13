@@ -49,12 +49,12 @@
           aria-label="記事の前後ナビゲーション">
           <ul class="c-postnav">
 
-            <?php if($prev_post): ?>
+            <?php if($next_post): ?>
             <li class="c-postnav__icon">
               <a
-                class="c-postnav__pagerBtn c-postnav__pagerBtn--prev"
-                href="<?php echo get_permalink($prev_post); ?>"
-                aria-label="前のページ">
+                class="c-postnav__pagerBtn c-postnav__pagerBtn--next"
+                href="<?php echo get_permalink($next_post); ?>"
+                aria-label="次のページ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="8"
@@ -76,12 +76,12 @@
                 aria-current="page">一覧に戻る</a>
             </li>
 
-            <?php if($next_post): ?>
+            <?php if($prev_post): ?>
             <li class="c-postnav__icon">
               <a
-                class="c-postnav__pagerBtn c-postnav__pagerBtn--next"
-                href="<?php echo get_permalink($next_post); ?>"
-                aria-label="次のページ">
+                class="c-postnav__pagerBtn c-postnav__pagerBtn--prev"
+                href="<?php echo get_permalink($prev_post); ?>"
+                aria-label="前のページ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="8"
@@ -95,6 +95,9 @@
               </a>
             </li>
             <?php endif; ?>
+
+
+
           </ul>
         </nav>
       </div>

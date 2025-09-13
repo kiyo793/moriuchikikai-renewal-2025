@@ -31,9 +31,9 @@
   margin-block-start: 56px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 
   > h2 {
+    margin-block-end: 20px;
     padding: 12px 20px;
     background: var(--main-color);
     color: var(--color-white);
@@ -42,6 +42,7 @@
     letter-spacing: 0.96px;
   }
   > h3 {
+    margin-block-end: 20px;
     padding-inline-start: 20px;
     font-size: 24px;
     font-weight: var(--fw-mid);
@@ -58,14 +59,16 @@
     }
   }
   > h4 {
+    margin-block-end: 20px;
     font-size: 20px;
     font-weight: var(--fw-mid);
     letter-spacing: 0.8px;
   }
   > p {
+    margin-block-end: 16px;
     letter-spacing: 0.64px;
   }
-  > img {
+  > figure {
     inline-size: min(500px, 100%);
     height: auto;
   }

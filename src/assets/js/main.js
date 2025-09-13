@@ -156,47 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//お問い合わせ送信ボタン
-document.addEventListener("DOMContentLoaded", function () {
 
-  const form = document.querySelector(".p-contact__form");
-  const requiredFields = form.querySelectorAll("[required]");
-  const submitBtn = form.querySelector("button[type='submit']");
-
-  function checkRequired() {
-    let allFilled = true;
-    
-    requiredFields.forEach(field => {
-
-      if (field.type === 'checkbox') {
-        if (!field.checked) {
-          allFilled = false;
-        }
-      } else {
-
-        if (!field.value.trim()) {
-          allFilled = false;
-        }
-      }
-    });
-
-    submitBtn.disabled = !allFilled;
-  }
-
-
-  submitBtn.disabled = true;
-
-
-  requiredFields.forEach(field => {
-    if (field.type === 'checkbox') {
-
-      field.addEventListener("change", checkRequired);
-    } else {
-
-      field.addEventListener("input", checkRequired);
-    }
-  });
-});
 
 //アニメーション
 class FadeAnimationObserver {

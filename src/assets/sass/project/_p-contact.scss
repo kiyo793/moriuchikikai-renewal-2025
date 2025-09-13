@@ -84,14 +84,12 @@
 
 .p-contact__form {
   margin-block-start: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
 }
 
 .p-contact__formItem {
   display: flex;
   flex-direction: column;
+  margin-block-end: 18px;
 }
 
 .p-contact__label {
@@ -107,6 +105,7 @@
   border: 1px solid var(--color-black);
   padding: 16px 32px;
   letter-spacing: 0.64px;
+  inline-size: 100%;
   &::placeholder {
     color: var(--color-darkgray);
   }
@@ -195,26 +194,28 @@
 .p-contact__checkboxLabel {
   margin-block-start: 12px;
   letter-spacing: 0.64px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.p-contact__checkbox {
-  inline-size: 1px;
-  block-size: 1px;
+
+.p-contact__checkbox{
+  width: 1px;
+  height: 1px;
   position: absolute;
   clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-  &:checked {
-    + .p-contact__checkboxText {
-      &::after {
-        opacity: 1;
-      }
-    }
+}
+.p-contact__checkbox:checked + span {
+  &::after {
+    opacity: 1;
   }
 }
 
-.p-contact__checkboxText {
+.p-contact__checkbox +span {
+  display: inline-block;
+  margin-inline-start: 24px;
   letter-spacing: 0.64px;
-  margin-inline-start: 40px;
   position: relative;
   &::before,
   &::after {
@@ -245,13 +246,17 @@
 }
 
 .p-contact__submit {
-  margin-block-start: 44px;
-  display: inline-block;
-  align-self: center;
+  margin-block-start: 62px;
+align-self: center;
+justify-self: center;
 }
-.p-contact__submit button:disabled {
+.wpcf7-spinner {
+  display: none;
+}
+.p-contact__submit input[disabled] {
   opacity: 0.7;
   cursor: not-allowed;
+
 }
 
 .p-contact__button {

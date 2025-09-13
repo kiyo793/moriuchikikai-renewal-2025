@@ -4,6 +4,11 @@
 
 </main>
 
+
+    <?php
+    $current_slug = get_post_field('post_name', get_post());
+    if ($current_slug !== 'contact' && $current_slug !== 'contact-thanks') :
+    ?>
     <section class="p-cta">
       <div class="p-cta__inner">
         <div class="p-cta__body" data-animation="fade-in">
@@ -13,20 +18,19 @@
               <p class="c-heading__ja">お問い合わせ</p>
             </div>
           </div>
-
           <div class="p-cta__info">
             <a href="tel:0726533109" class="p-cta__tel">072-653-3109</a>
             <div class="p-cta__time">受付時間：平日8時～17時</div>
           </div>
-
           <div class="p-cta__actions">
-            <a href="<?php home_url(); ?>/contact" class="c-button c-button--blue"
+            <a href="<?php echo home_url(); ?>/contact" class="c-button c-button--blue"
               >メールでのお問い合わせ</a
             >
           </div>
         </div>
       </div>
     </section>
+    <?php endif; ?>
 
     <footer class="l-footer">
       <div class="l-footer__inner" data-animation="fade-in">
