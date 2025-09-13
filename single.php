@@ -25,43 +25,35 @@
       </nav>
     <?php endif; ?>
 
+    <?php if(have_posts()): while(have_posts()): the_post(); ?>
     <section class="p-singleNews" data-animation="fade-in">
       <div class="p-singleNews__inner l-inner--sm">
         <div class="p-singleNews__head">
-          <time class="p-singleNews__date" datetime="2025-01-01">2025.00.00</time>
+          <time class="p-singleNews__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m.d') ?></time>
           <h1 class="p-singleNews__title">
-            ホームページがリニューアルオープンしました！
+            <?php the_title(); ?>
           </h1>
         </div>
 
         <article class="p-singleNews__body">
-          <h2>h2タイトルが入ります。</h2>
-          <h3>h3タイトルが入ります。</h3>
-          <h4>h4タイトルが入ります。</h4>
-
-          <!-- 段落 -->
-          <p>
-            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-          </p>
-          <p>
-            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-          </p>
-
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholders/img_1.webp" alt="ダミー" />
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholders/img_2.webp" alt="ダミー" />
+          <?php the_content(); ?>
         </article>
 
         <!-- ページネーション -->
+        <?php
+          $prev_post = get_previous_post(false);
+          $next_post = get_next_post(false);
+        ?>
         <nav
           class="p-singleNews__postnav"
           aria-label="記事の前後ナビゲーション">
           <ul class="c-postnav">
+
+            <?php if($prev_post): ?>
             <li class="c-postnav__icon">
               <a
                 class="c-postnav__pagerBtn c-postnav__pagerBtn--prev"
-                href="#"
+                href="<?php echo get_permalink($prev_post); ?>"
                 aria-label="前のページ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -75,16 +67,20 @@
                 </svg>
               </a>
             </li>
-            <li class="c-postnav__icon">
+            <?php endif; ?>
+
+            <li class="c-postnav__icon c-postnav__icon--center">
               <a
-                href="#"
+                href="<?php home_url(); ?>/news"
                 class="c-button c-button--white c-button--postnav"
                 aria-current="page">一覧に戻る</a>
             </li>
+
+            <?php if($next_post): ?>
             <li class="c-postnav__icon">
               <a
                 class="c-postnav__pagerBtn c-postnav__pagerBtn--next"
-                href="#"
+                href="<?php echo get_permalink($next_post); ?>"
                 aria-label="次のページ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,9 +94,11 @@
                 </svg>
               </a>
             </li>
+            <?php endif; ?>
           </ul>
         </nav>
       </div>
     </section>
+    <?php endwhile; endif;?>
 
 <?php get_footer(); ?>

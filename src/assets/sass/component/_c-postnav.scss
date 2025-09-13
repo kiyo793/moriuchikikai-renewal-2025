@@ -1,0 +1,37 @@
+@use "../global" as *;
+@use "sass:map";
+
+.c-postnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-postnav__icon {
+    transition: all 0.3s;
+    @include mq(pc) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+}
+
+.c-postnav__icon--center {
+    margin-inline: auto;
+}
+
+.c-postnav__pagerBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background: var(--main-color);
+    border: solid 1px var(--main-color);
+    &--next {
+        justify-self: end;
+    }
+}

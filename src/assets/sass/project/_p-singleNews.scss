@@ -75,24 +75,3 @@
   margin-block-start: 100px;
 }
 
-.c-postnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.c-postnav__icon {
-}
-
-.c-postnav__pagerBtn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-    background: var(--main-color);
-    border: solid 1px var(--main-color);
-}
