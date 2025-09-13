@@ -39,7 +39,7 @@ Template Name: お問い合わせ完了
         </div>
 
         <div class="p-contact__button">
-          <a href="#" class="c-button c-button--white c-button--back">トップへ戻る</a>
+          <a href="<?php echo home_url(); ?>/" class="c-button c-button--white c-button--back">トップへ戻る</a>
         </div>
 
         <div class="p-contact__telBox">

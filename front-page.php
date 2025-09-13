@@ -43,8 +43,8 @@
           loading="lazy" />
       </div>
       <div class="p-topContentsNav__actions" data-animation="fade-in">
-        <a href="#" class="c-button c-button--white">詳しく見る</a>
-        <a href="#" class="c-button c-button--white">ごみ処理プラントについて</a>
+        <a href="<?php echo home_url(); ?>/service" class="c-button c-button--white">詳しく見る</a>
+        <a href="<?php echo home_url(); ?>/garbage-treatment-plant" class="c-button c-button--white">ごみ処理プラントについて</a>
       </div>
     </div>
 
@@ -64,7 +64,7 @@
           loading="lazy" />
       </div>
       <div class="p-topContentsNav__actions" data-animation="fade-in">
-        <a href="#" class="c-button c-button--white">詳しく見る</a>
+        <a href="<?php echo home_url(); ?>/products" class="c-button c-button--white">詳しく見る</a>
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@
             </div>
           </div>
           <div class="p-topCorporateNav__actinos">
-            <a href="#" class="c-button c-button--outline">詳しく見る</a>
+            <a href="<?php echo home_url(); ?>/company" class="c-button c-button--outline">詳しく見る</a>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
             </div>
           </div>
           <div class="p-topCorporateNav__actinos">
-            <a href="#" class="c-button c-button--outline">詳しく見る</a>
+            <a href="<?php echo home_url(); ?>/recruit" class="c-button c-button--outline">詳しく見る</a>
           </div>
         </div>
       </div>
