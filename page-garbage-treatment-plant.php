@@ -17,8 +17,8 @@ Template Name: ごみ処理プラント
 
       <div class="p-pageHead__inner">
         <div class="p-pageHead__body" data-animation="fade-in">
-          <h2 class="p-pageHead__en">GARBAGE TREATMENT PLANT</h2>
-          <div class="p-pageHead__ja">ごみ処理プラント</div>
+          <p class="p-pageHead__en">GARBAGE TREATMENT PLANT</p>
+          <h1 class="p-pageHead__ja">ごみ処理プラント</h1>
         </div>
       </div>
     </div>
@@ -35,13 +35,13 @@ Template Name: ごみ処理プラント
 
     <div class="c-lead c-lead--space c-lead--compact" data-animation="fade-in">
       <p>
-        森内機械製作所では、ごみ処理プラント向けの各種装置や部品の製作に長年取り組み、<br />
+        森内機械製作所では、ごみ処理プラント向けの各種装置や部品の<wbr />製作に長年取り組み、<br />
         信頼に基づいた設備製作を数多く手がけてまいりました。<br />
         特に、コンベアやホッパーなどの排出・搬送系装置の製作実績が豊富で、<br />
         製缶から設計・機械加工・据付まで一貫対応できる<br class="u-hidden-pc">体制を整えています。<br />
       </p>
       <p>
-        設置環境や処理内容に応じたオーダーメイド製作にも柔軟に対応しており、<br />
+        設置環境や処理内容に応じたオーダーメイド<wbr />製作にも柔軟に対応しており、<br />
         今後も現場のニーズに応じた確かな技術で、施設運用を支えるものづくりに取り組んでまいります。
       </p>
       <div class="c-lead__image">
@@ -57,8 +57,8 @@ Template Name: ごみ処理プラント
       <div class="p-delivery__inner l-inner">
         <div class="p-delivery__heading">
           <div class="c-sectionTitle" data-animation="fade-in">
-            <h2 class="c-sectionTitle__en">PRODUCTS</h2>
-            <p class="c-sectionTitle__ja">納入実績</p>
+            <p class="c-sectionTitle__en">PRODUCTS</p>
+            <h2 class="c-sectionTitle__ja">納入実績</h2>
           </div>
         </div>
         <div class="p-delivery__body">

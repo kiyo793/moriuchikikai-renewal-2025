@@ -17,8 +17,8 @@ Template Name: お問い合わせ完了
 
       <div class="p-pageHead__inner">
         <div class="p-pageHead__body" data-animation="fade-in">
-          <h2 class="p-pageHead__en">CONTACT</h2>
-          <div class="p-pageHead__ja">お問い合わせ</div>
+          <p class="p-pageHead__en">CONTACT</p>
+          <h1 class="p-pageHead__ja">お問い合わせ</h1>
         </div>
       </div>
     </div>

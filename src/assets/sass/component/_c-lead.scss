@@ -26,7 +26,7 @@
 }
 
 .c-lead__image {
-    inline-size: min(calc(900px + 16px * 2), 100%);
+    inline-size: min(calc(900px), 100%);
     margin-inline: auto;
     margin-block-start: 32px;
 }

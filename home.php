@@ -17,8 +17,8 @@ Template Name: お知らせ
 
   <div class="p-pageHead__inner">
     <div class="p-pageHead__body" data-animation="fade-in">
-      <h2 class="p-pageHead__en">NEWS</h2>
-      <div class="p-pageHead__ja">お知らせ</div>
+      <p class="p-pageHead__en">NEWS</p>
+      <h1 class="p-pageHead__ja">お知らせ</h1>
     </div>
   </div>
 </div>
@@ -43,9 +43,12 @@ Template Name: お知らせ
             <article class="p-news__article">
               <a class="p-news__link" href="<?php the_permalink(); ?>">
                 <time class="p-news__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m.d');  ?></time>
-                <h3 class="p-news__title">
-                  <?php the_title(); ?>
-                </h3>
+                <h2 class="p-news__title">
+                  <?php
+                  $title = get_the_title();
+                  echo mb_strimwidth($title, 0, 88, '…', 'UTF-8');
+                  ?>
+                </h2>
               </a>
             </article>
           </li>

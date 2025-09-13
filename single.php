@@ -11,8 +11,8 @@
 
       <div class="p-pageHead__inner">
         <div class="p-pageHead__body" data-animation="fade-in">
-          <div class="p-pageHead__en">NEWS</div>
-          <div class="p-pageHead__ja">お知らせ</div>
+          <p class="p-pageHead__en">NEWS</p>
+          <p class="p-pageHead__ja">お知らせ</p>
         </div>
       </div>
     </div>

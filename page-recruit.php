@@ -17,8 +17,8 @@ Template Name: 採用情報
 
       <div class="p-pageHead__inner">
         <div class="p-pageHead__body" data-animation="fade-in">
-          <h2 class="p-pageHead__en">RECRUIT</h2>
-          <div class="p-pageHead__ja">採用情報</div>
+          <p class="p-pageHead__en">RECRUIT</p>
+          <h1 class="p-pageHead__ja">採用情報</h1>
         </div>
       </div>
     </div>
@@ -35,10 +35,10 @@ Template Name: 採用情報
       <div class="p-message__inner l-inner">
         <div class="p-message__heading">
           <div class="c-sectionTitle" data-animation="fade-in">
-            <h2 class="c-sectionTitle__en">MESSAGE</h2>
-            <p class="c-sectionTitle__ja c-sectionTitle__ja--small">
+            <p class="c-sectionTitle__en">MESSAGE</p>
+            <h2 class="c-sectionTitle__ja c-sectionTitle__ja--small">
               この工場で学べば、<wbr />一生ものの技術が手に入る。
-            </p>
+            </h2>
           </div>
         </div>
 
@@ -77,10 +77,10 @@ Template Name: 採用情報
       <div class="p-recruit__inner l-inner">
         <div class="p-recruit__heading">
           <div class="c-sectionTitle" data-animation="fade-in">
-            <h2 class="c-sectionTitle__en c-sectionTitle__en--small">
+            <p class="c-sectionTitle__en c-sectionTitle__en--small">
               JOB <br class="u-hidden-pc" />DESCRIPTION
-            </h2>
-            <p class="c-sectionTitle__ja">募集要項</p>
+            </p>
+            <h2 class="c-sectionTitle__ja">募集要項</h2>
           </div>
         </div>
 

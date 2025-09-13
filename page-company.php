@@ -17,8 +17,8 @@ Template Name: 会社案内
 
       <div class="p-pageHead__inner">
         <div class="p-pageHead__body" data-animation="fade-in">
-          <h2 class="p-pageHead__en">COMPANY</h2>
-          <div class="p-pageHead__ja">会社案内</div>
+          <p class="p-pageHead__en">COMPANY</p>
+          <h1 class="p-pageHead__ja">会社案内</h1>
         </div>
       </div>
     </div>
@@ -49,8 +49,8 @@ Template Name: 会社案内
       <div class="p-about__inner l-inner">
         <div class="p-about__heading">
           <div class="c-sectionTitle" data-animation="fade-in">
-            <h2 class="c-sectionTitle__en">ABOUT</h2>
-            <p class="c-sectionTitle__ja">会社概要</p>
+            <p class="c-sectionTitle__en">ABOUT</p>
+            <h2 class="c-sectionTitle__ja">会社概要</h2>
           </div>
         </div>
         <div class="p-about__body" data-animation="fade-in">
@@ -142,8 +142,8 @@ Template Name: 会社案内
       <div class="p-history__inner l-inner">
         <div class="p-history__heading">
           <div class="c-sectionTitle" data-animation="fade-in">
-            <h2 class="c-sectionTitle__en">HISTORY</h2>
-            <p class="c-sectionTitle__ja">沿革</p>
+            <p class="c-sectionTitle__en">HISTORY</p>
+            <h2 class="c-sectionTitle__ja">沿革</h2>
           </div>
         </div>
 
@@ -233,8 +233,8 @@ Template Name: 会社案内
       <div class="p-access__inner l-inner">
         <div class="p-access__heading">
           <div class="c-sectionTitle" data-animation="fade-in">
-            <h2 class="c-sectionTitle__en">ACCESS</h2>
-            <p class="c-sectionTitle__ja">アクセス</p>
+            <p class="c-sectionTitle__en">ACCESS</p>
+            <h2 class="c-sectionTitle__ja">アクセス</h2>
           </div>
         </div>
 

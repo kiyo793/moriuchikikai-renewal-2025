@@ -77,4 +77,27 @@ add_action('wp_enqueue_scripts', 'my_script_init');
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
 
+add_filter('the_content', function ($content) {
+  if (is_admin()) return $content;
+
+  libxml_use_internal_errors(true);
+  $doc = new DOMDocument('1.0', 'UTF-8');
+
+  $doc->loadHTML('<?xml encoding="utf-8" ?>' . $content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+
+  $xpath = new DOMXPath($doc);
+
+  foreach ($xpath->query('//img') as $img) {
+    $alt = $img->getAttribute('alt');
+    if (trim($alt) === '') {
+      $img->setAttribute('alt', '株式会社森内機械製作所');
+    }
+  }
+
+  $html = $doc->saveHTML();
+  libxml_clear_errors();
+  return $html;
+}, 20);
+
+
 ?>

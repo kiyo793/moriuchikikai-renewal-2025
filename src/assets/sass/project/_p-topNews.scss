@@ -54,7 +54,7 @@
   padding-block: 16px;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 36px;
   border-bottom: 1px solid var(--color-darkgray);
   transition: all 0.3s;
   @include mq(sp) {

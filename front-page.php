@@ -11,6 +11,7 @@
           src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/hero-main_sp.webp"
           width="2720"
           height="1360"
+          alt="溶接作業を行う職人の写真"
           decoding="async" />
       </picture>
     </div>
@@ -145,7 +146,10 @@
                 <a href="<?php echo the_permalink(); ?>" class="p-topNews__link">
                   <data value="<?php the_time('c'); ?>" class="p-topNews__data"><?php the_time('Y.m.d.') ?></data>
                   <h3 class="p-topNews__title">
-                    <?php the_title(); ?>
+                    <?php
+                    $title = get_the_title();
+                    echo mb_strimwidth($title, 0, 64, '…', 'UTF-8');
+                    ?>
                   </h3>
                 </a>
               </article>

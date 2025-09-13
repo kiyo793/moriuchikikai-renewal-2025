@@ -17,8 +17,8 @@ Template Name: 実績紹介
 
       <div class="p-pageHead__inner">
         <div class="p-pageHead__body" data-animation="fade-in">
-          <h2 class="p-pageHead__en">PRODUCTS</h2>
-          <div class="p-pageHead__ja">実績紹介</div>
+          <p class="p-pageHead__en">PRODUCTS</p>
+          <h1 class="p-pageHead__ja">実績紹介</h1>
         </div>
       </div>
     </div>
@@ -53,8 +53,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">タンク</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">タンク</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -68,8 +68,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">油圧ダンパー</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">油圧ダンパー</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -83,8 +83,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">Φ370ｘ1300Lプーリー</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">Φ370ｘ1300Lプーリー</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -98,8 +98,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">エプロンコンベヤ</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">エプロンコンベヤ</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -113,8 +113,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">スクリューコンベヤ</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">スクリューコンベヤ</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -128,8 +128,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">ヘッドスプロケット</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">ヘッドスプロケット</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -143,8 +143,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">駆動ホイル＆シャフト</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">駆動ホイル＆シャフト</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -158,8 +158,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">鋳物２つ割軸受</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">鋳物２つ割軸受</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -173,8 +173,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">φ190ｘ2500Lシャフト</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">φ190ｘ2500Lシャフト</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -188,8 +188,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">沈殿槽タンク</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">沈殿槽タンク</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -203,8 +203,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">破砕機部品</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">破砕機部品</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -218,8 +218,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">砲金２つ割ブッシュ</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">砲金２つ割ブッシュ</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -233,8 +233,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">蒸気配管</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">蒸気配管</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -248,8 +248,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">エアーステップ台</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">エアーステップ台</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -263,8 +263,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">油圧機械</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">油圧機械</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -278,8 +278,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">チルローダー</h3>
-              <p class="c-products-card__text">材質（鉄またはステンレス）</p>
+              <h2 class="c-products-card__name">チルローダー</h2>
+              <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
             </div>
           </div>
 
@@ -293,8 +293,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">ダンプ用ハッチ</h3>
-              <p class="c-products-card__text">材質なし</p>
+              <h2 class="c-products-card__name">ダンプ用ハッチ</h2>
+              <h3 class="c-products-card__text">材質なし</h3>
             </div>
           </div>
 
@@ -308,8 +308,8 @@ Template Name: 実績紹介
                 loading="lazy" />
             </div>
             <div class="c-products-card__bottom">
-              <h3 class="c-products-card__name">重量単体物輸送</h3>
-              <p class="c-products-card__text">材質なし</p>
+              <h2 class="c-products-card__name">重量単体物輸送</h2>
+              <h3 class="c-products-card__text">材質なし</h3>
             </div>
           </div>
         </div>

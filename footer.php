@@ -14,8 +14,8 @@
         <div class="p-cta__body" data-animation="fade-in">
           <div class="p-cta__heading">
             <div class="c-heading c-heading--white c-heading--center">
-              <h2 class="c-heading__en">CONTACT</h2>
-              <p class="c-heading__ja">お問い合わせ</p>
+              <p class="c-heading__en">CONTACT</p>
+              <h2 class="c-heading__ja">お問い合わせ</h2>
             </div>
           </div>
           <div class="p-cta__info">

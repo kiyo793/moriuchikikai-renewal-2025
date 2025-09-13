@@ -17,8 +17,8 @@ Template Name: 事業内容
 
       <div class="p-pageHead__inner" data-animation="fade-in">
         <div class="p-pageHead__body">
-          <h2 class="p-pageHead__en">SERVICE</h2>
-          <div class="p-pageHead__ja">事業内容</div>
+          <p class="p-pageHead__en">SERVICE</p>
+          <h1 class="p-pageHead__ja">事業内容</h1>
         </div>
       </div>
     </div>

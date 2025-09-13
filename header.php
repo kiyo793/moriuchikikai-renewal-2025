@@ -12,11 +12,19 @@
 
   <header class="l-header">
     <div class="l-header__inner">
+    <?php if ( is_front_page() ) : ?>
       <h1 class="l-header__logo">
-        <a href="<?php home_url(); ?>/" class="l-hader__logo-link">
+        <a href="<?php echo home_url(); ?>/" class="l-header__logo-link">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ui/logos/company-logo.webp" alt="株式会社森内機械製作所" width="456" height="70">
         </a>
       </h1>
+    <?php else : ?>
+      <div class="l-header__logo">
+        <a href="<?php echo home_url(); ?>/" class="l-header__logo-link">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ui/logos/company-logo.webp" alt="株式会社森内機械製作所" width="456" height="70">
+        </a>
+      </div>
+    <?php endif; ?>
 
       <nav class="l-gnav" aria-label="グローバルナビ">
         <ul class="l-gnav__list">
