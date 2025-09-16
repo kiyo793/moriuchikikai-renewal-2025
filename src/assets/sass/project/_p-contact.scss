@@ -249,6 +249,10 @@
   margin-block-start: 62px;
 align-self: center;
 justify-self: center;
+>input {
+  display:block;
+  margin-inline: auto;
+}
 }
 .wpcf7-spinner {
   display: none;
