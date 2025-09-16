@@ -86,7 +86,7 @@
           <div class="p-topCorporateNav__heading">
             <div class="c-heading c-heading--white c-heading--center">
               <h2 class="c-heading__en">COMPANY</h2>
-              <p class="c-heading__ja">会社概要</p>
+              <p class="c-heading__ja">会社案内</p>
             </div>
           </div>
           <div class="p-topCorporateNav__actinos">
