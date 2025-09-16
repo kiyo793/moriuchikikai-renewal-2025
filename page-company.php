@@ -89,7 +89,7 @@ Template Name: 会社案内
             <div class="c-definitionList__row">
               <dt class="c-definitionList__term">事業内容</dt>
               <dd class="c-definitionList__desc">
-                製缶加工全般、各種コンベア・ホッパー・ダクト・フライス・旋盤加工、組込、各種設計加工
+                製缶加工全般、各種コンベア・ホッパー・ダクト・フライス・旋盤加工、組込、各種設計施工
               </dd>
             </div>
 
