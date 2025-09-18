@@ -44,10 +44,7 @@ Template Name: お知らせ
               <a class="p-news__link" href="<?php the_permalink(); ?>">
                 <time class="p-news__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m.d');  ?></time>
                 <h2 class="p-news__title">
-                  <?php
-                  $title = get_the_title();
-                  echo mb_strimwidth($title, 0, 88, '…', 'UTF-8');
-                  ?>
+                  <?php the_title(); ?>
                 </h2>
               </a>
             </article>

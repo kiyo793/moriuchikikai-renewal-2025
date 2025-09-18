@@ -14,6 +14,7 @@
   margin-inline: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 120px;
   @include mq(sp) {
     padding-inline: clamp-vi(16, 180);
@@ -22,6 +23,7 @@
 }
 
 .p-topContentsNav__media {
+  inline-size: min(1080px, 100%);
   display: grid;
   grid-template-columns: 1fr 57.408%;
   grid-template-rows: repeat(2, 1fr);
@@ -50,6 +52,9 @@
     .p-topContentsNav__image {
       margin-inline-start: calc(clamp-vi(20, 180, 768, 1440) * -1);
       margin-inline-end: 0;
+      @media (min-width: 1441px) {
+        margin-inline-start: calc(min((100vw - 1080px) / 2, 420px) * -1);
+      }
       @include mq(sp) {
         margin-inline: calc(clamp-vi(16, 180) * -1);
       }
@@ -69,6 +74,9 @@
   grid-area: image;
   block-size: 500px;
   margin-inline-end: calc(clamp-vi(20, 180, 768, 1440) * -1);
+  @media (min-width: 1441px) {
+    margin-inline-end: calc(min((100vw - 1080px) / 2, 420px) * -1);
+  }
   @include mq(sp) {
     margin-inline: calc(clamp-vi(16, 180) * -1);
     block-size: 281px;

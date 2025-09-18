@@ -31,7 +31,7 @@ Template Name: 事業内容
   </nav>
 <?php endif; ?>
 
-<div class="c-lead" data-animation="fade-in">
+<div class="c-lead c-lead--narrow" data-animation="fade-in">
   <p>
     森内機械製作所では、鉄・ステンレスを用いた<br
       class="u-hidden-pc" />コンベア・ホッパーの製作を主軸に、<br />
@@ -45,8 +45,7 @@ Template Name: 事業内容
       class="u-hidden-pc" />柔軟に対応いたします。
   </p>
   <p>
-    長年培ってきた技術力を活かし、<br
-      class="u-hidden-pc" />品質・精度・納期のすべてに誠実に取り組んでいます。
+    長年培ってきた技術力を活かし、品質・精度・<br class="u-hidden-pc">納期のすべてに誠実に取り組んでいます。
   </p>
 </div>
 

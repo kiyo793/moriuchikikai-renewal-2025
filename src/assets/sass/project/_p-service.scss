@@ -3,11 +3,14 @@
 
 .p-service {
     padding-block: 60px 80px;
+    @include mq(sp) {
+      padding-inline: 16px;
+    }
 }
 
 .p-service__inner{
     @media (max-width: 500px) {
-        padding-inline: 0;
+        padding-inline: 0px;
     }
 }
 

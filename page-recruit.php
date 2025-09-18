@@ -120,7 +120,7 @@ Template Name: 採用情報
             <div class="c-definitionList__row">
               <dt class="c-definitionList__term">福利厚生</dt>
               <dd class="c-definitionList__desc">
-                社会保険完備、マイカー通勤可（駐車スペースあり）
+                社会保険完備、マイカー通勤可<br class="u-hidden-sm">（駐車スペースあり）
               </dd>
             </div>
 

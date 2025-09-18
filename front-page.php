@@ -146,10 +146,7 @@
                 <a href="<?php echo the_permalink(); ?>" class="p-topNews__link">
                   <data value="<?php the_time('c'); ?>" class="p-topNews__data"><?php the_time('Y.m.d.') ?></data>
                   <h3 class="p-topNews__title">
-                    <?php
-                    $title = get_the_title();
-                    echo mb_strimwidth($title, 0, 64, '…', 'UTF-8');
-                    ?>
+                    <?php the_title(); ?>
                   </h3>
                 </a>
               </article>

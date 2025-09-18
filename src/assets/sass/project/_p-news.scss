@@ -47,6 +47,13 @@
 
 .p-news__title {
     letter-spacing: 0.64px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    @include mq(sp) {
+        -webkit-line-clamp: 2;
+    }
 }
 
 

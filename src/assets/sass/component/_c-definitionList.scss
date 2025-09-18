@@ -22,7 +22,7 @@
     inline-size: 200px;
     border-block-end: 1px solid var(--main-color);
     @include mq(sp) {
-      inline-size: 160px;
+      inline-size: 100%;
       padding: 10px;
     }
 }

@@ -78,6 +78,13 @@
 .p-topNews__title {
     font-weight: var(--fw-mid);
     letter-spacing: 0.64px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    @include mq(sp) {
+      -webkit-line-clamp: 2;
+    }
 }
 
 .p-topContentsNav__actions {

@@ -31,12 +31,12 @@ Template Name: 実績紹介
   </nav>
 <?php endif; ?>
 
-<div class="c-lead c-lead--compact" data-animation="fade-in">
+<div class="c-lead c-lead--compact c-lead--narrow" data-animation="fade-in">
   <p>
-    森内機械製作所では、鉄・ステンレスを用いたコンベアやホッパーなどの製品を、製缶から設計・据付まで一貫して製作しています。
+    森内機械製作所では、鉄・ステンレスを用いた<br class="u-hidden-pc">コンベアやホッパーなどの製品を、<br class="u-hidden-pc">製缶から設計・据付まで<br class="u-hidden-pc">一貫して製作しています。
   </p>
   <p>
-    長年の経験と技術を活かし、現場に合わせたオーダーメイド製作を行っており、以下にその一部をご紹介いたします。
+    長年の経験と技術を活かし、<br class="u-hidden-pc">現場に合わせたオーダーメイド製作を行っており、<br class="u-hidden-pc">以下にその一部をご紹介いたします。
   </p>
 </div>
 
