@@ -36,7 +36,7 @@ Template Name: 実績紹介
     森内機械製作所では、鉄・ステンレスを用いた<br class="u-hidden-pc">コンベアやホッパーなどの製品を、<br class="u-hidden-pc">製缶から設計・据付まで<br class="u-hidden-pc">一貫して製作しています。
   </p>
   <p>
-    長年の経験と技術を活かし、<br class="u-hidden-pc">現場に合わせたオーダーメイド製作を行っており、<br class="u-hidden-pc">以下にその一部をご紹介いたします。
+    長年の経験と技術を活かし、<br class="u-hidden-pc">現場に合わせた<wbr>オーダーメイド製作を行っており、<br class="u-hidden-pc">以下にその一部をご紹介いたします。
   </p>
 </div>
 

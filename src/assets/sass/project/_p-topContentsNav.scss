@@ -3,6 +3,7 @@
 
 .p-topContentsNav {
   padding-block: 60px;
+  overflow: hidden;
   @include mq(sp) {
     padding-block-start: 80px;
   }

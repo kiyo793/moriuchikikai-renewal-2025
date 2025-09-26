@@ -21,7 +21,7 @@ border-radius: 32px;
 .p-service__body > .c-service-media:nth-of-type(even) {
   >.c-service-media__inner {
     flex-direction: row-reverse;
-    padding-inline: clamp-vi(16, 32);
+    padding-inline: clamp-vi(8, 32);
     @media (max-width: 850px) {
       flex-direction: column;
     }
