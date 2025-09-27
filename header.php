@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="robots" content="no-index" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <?php wp_head(); ?>
