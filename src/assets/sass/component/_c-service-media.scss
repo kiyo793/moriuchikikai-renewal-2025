@@ -19,6 +19,7 @@ border-radius: 32px;
 }
 
 .p-service__body > .c-service-media:nth-of-type(even) {
+  background: var(--sub-color);
   >.c-service-media__inner {
     flex-direction: row-reverse;
     padding-inline: clamp-vi(8, 32);

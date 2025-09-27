@@ -69,7 +69,7 @@ Template Name: ごみ処理プラント
             <div class="c-delivery-card__image">
               <img
                 src="<?php echo get_template_directory_uri(); ?>/assets/img/content/garbage-treatment-plant/img_1.webp"
-                alt=""
+                alt="投入ホッパー"
                 width="912"
                 height="600"
                 loading="lazy" />
@@ -83,7 +83,7 @@ Template Name: ごみ処理プラント
             <div class="c-delivery-card__image">
               <img
                 src="<?php echo get_template_directory_uri(); ?>/assets/img/content/garbage-treatment-plant/img_2.webp"
-                alt=""
+                alt="水冷ジャケット"
                 width="912"
                 height="600"
                 loading="lazy" />
@@ -97,7 +97,7 @@ Template Name: ごみ処理プラント
             <div class="c-delivery-card__image">
               <img
                 src="<?php echo get_template_directory_uri(); ?>/assets/img/content/garbage-treatment-plant/img_3.webp"
-                alt=""
+                alt="ガス冷却塔"
                 width="912"
                 height="600"
                 loading="lazy" />
@@ -111,7 +111,7 @@ Template Name: ごみ処理プラント
             <div class="c-delivery-card__image">
               <img
                 src="<?php echo get_template_directory_uri(); ?>/assets/img/content/garbage-treatment-plant/img_4.webp"
-                alt=""
+                alt="急冷洗浄塔"
                 width="912"
                 height="600"
                 loading="lazy" />
@@ -125,7 +125,7 @@ Template Name: ごみ処理プラント
             <div class="c-delivery-card__image">
               <img
                 src="<?php echo get_template_directory_uri(); ?>/assets/img/content/garbage-treatment-plant/img_5.webp"
-                alt=""
+                alt="ダクト"
                 width="912"
                 height="600"
                 loading="lazy" />
