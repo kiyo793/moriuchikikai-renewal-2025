@@ -5,8 +5,11 @@
     z-index: map.get($layer, "header");
     position: fixed;
     inline-size: 100%;
-    padding-block: clamp-vi(16, 22);
+    padding-block: 22px;
     background: var(--color-white);
+    @include mq(sp) {
+      padding-block: 16px;
+    }
 }
 
 .l-header__inner {

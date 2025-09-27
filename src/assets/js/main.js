@@ -38,29 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-function setLayoutHeights() {
-  const header = document.querySelector(".l-header");
-  const footer = document.querySelector(".l-footer");
-
-  if (header) {
-    document.documentElement.style.setProperty(
-      "--header-height",
-      `${header.offsetHeight}px`
-    );
-  }
-
-  if (footer) {
-    document.documentElement.style.setProperty(
-      "--footer-height",
-      `${footer.offsetHeight}px`
-    );
-  }
-}
-
-window.addEventListener("load", setLayoutHeights);
-window.addEventListener("resize", setLayoutHeights);
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const drawerIcon = document.querySelector(".c-drawer-icon");
   const drawer = document.querySelector(".p-drawer");

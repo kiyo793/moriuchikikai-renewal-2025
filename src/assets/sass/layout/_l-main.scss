@@ -2,5 +2,11 @@
 @use "sass:map";
 
 .l-main{
-      padding-block-start: var(--header-height);
+      padding-block-start: 79.55px;
+      @media (max-width: 1119px) {
+        padding-block-start: 92px;
+      }
+      @include mq(sp) {
+        padding-block-start: 80px;
+      }
 }

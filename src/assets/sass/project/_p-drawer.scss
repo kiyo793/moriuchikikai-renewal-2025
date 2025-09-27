@@ -3,7 +3,7 @@
 
 .p-drawer {
   position: fixed;
-  inset-block-start: var(--header-height);
+  inset-block-start: 79.55px;
   inset-inline-end: 0;
   inline-size: 375px;
   block-size: 100vb;
@@ -16,7 +16,13 @@
   pointer-events: none;
   visibility: hidden;
   transition: all 0.4s;
-}
+    @media (max-width: 1119px) {
+    inset-block-start: 92px;
+    }
+    @include mq(sp) {
+    inset-block-start: 80px;
+    }
+    }
 
 //出現　アニメーション
 .p-drawer.js-show {

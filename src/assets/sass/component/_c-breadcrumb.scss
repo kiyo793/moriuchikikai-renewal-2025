@@ -15,6 +15,15 @@
 .c-breadcrumb__item {
   font-size: 12px;
   letter-spacing: 0.48px;
+  white-space: nowrap;
+}
+
+.c-breadcrumb__item > .current-page {
+  white-space: wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .c-breadcrumb__item + .c-breadcrumb__item {
@@ -22,6 +31,7 @@
   align-items: center;
 }
 .c-breadcrumb__item + .c-breadcrumb__item::before {
+  flex-shrink: 0;
   content: "";
   inline-size: 8px;
   block-size: 16px;
@@ -37,9 +47,4 @@
       opacity: 0.7;
     }
   }
-}
-
-//投稿ページだけタイトルを非表示
-.single .c-breadcrumb__item:last-child {
-  display: none;
 }
