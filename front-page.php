@@ -6,9 +6,9 @@
       <picture>
         <source
           media="(min-width: 768px)"
-          srcset="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/hero-main.webp" />
+          srcset="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/hero_pc.webp" />
         <img
-          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/hero-main_sp.webp"
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/hero_sp.webp"
           width="2720"
           height="1360"
           alt="溶接作業を行う職人の写真"
@@ -36,8 +36,8 @@
       </div>
       <div class="p-topContentsNav__image">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/img_1.webp"
-          alt="投入ホッパー"
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/service.webp"
+          alt="灰出フライトコンベア"
           width="1600"
           height="1000"
           loading="lazy" />
@@ -57,7 +57,7 @@
       </div>
       <div class="p-topContentsNav__image">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/img_2.webp"
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/products.webp"
           alt="ダクト"
           width="1600"
           height="1000"
@@ -76,7 +76,7 @@
       <div class="p-topCorporateNav__media" data-animation="fade-in">
         <div class="p-topCorporateNav__image">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/img_3.webp"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/company.webp"
             alt="会社案内"
             width="1020"
             height="720"
@@ -98,7 +98,7 @@
       <div class="p-topCorporateNav__media" data-animation="fade-in">
         <div class="p-topCorporateNav__image">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/img_4.webp"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/home/recruit.webp"
             alt="採用情報"
             width="1020"
             height="720"

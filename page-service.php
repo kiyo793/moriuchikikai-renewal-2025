@@ -10,7 +10,7 @@ Template Name: 事業内容
   <div class="p-pageHead__bg">
     <img
       src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/page-header-service.webp"
-      alt="company-head"
+      alt="service-head"
       width="2880"
       height="2672" />
   </div>
@@ -67,7 +67,6 @@ Template Name: 事業内容
                   各種コンベア（搬送ライン）や、ホッパー・ダクトの設計・製作
                 </li>
                 <li>設置環境・搬送物に応じたオーダーメイド対応</li>
-                <li>自社ブランドのコンベア製造にも対応可能</li>
                 <li>鉄・ステンレス対応</li>
                 <li>ごみ処理プラント向けの実績多数</li>
               </ul>
@@ -75,7 +74,7 @@ Template Name: 事業内容
           </div>
           <div class="c-service-media__image">
             <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/img_1.webp"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/service-1.webp"
               alt="コンベア・ホッパー・ダクト製作"
               width="960"
               height="652"
@@ -102,7 +101,7 @@ Template Name: 事業内容
           </div>
           <div class="c-service-media__image">
             <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/img_2.webp"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/service-2.webp"
               alt="製缶加工"
               width="960"
               height="652"
@@ -129,7 +128,7 @@ Template Name: 事業内容
           </div>
           <div class="c-service-media__image">
             <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/img_3.webp"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/service-3.webp"
               alt="機械加工"
               width="960"
               height="652"
@@ -154,7 +153,7 @@ Template Name: 事業内容
           </div>
           <div class="c-service-media__image">
             <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/img_4.webp"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/service-4.webp"
               alt="組込・据付"
               width="960"
               height="652"
@@ -179,7 +178,7 @@ Template Name: 事業内容
           </div>
           <div class="c-service-media__image">
             <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/img_5.webp"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/service-5.webp"
               alt=" 設計・施工"
               width="960"
               height="652"
@@ -207,7 +206,7 @@ Template Name: 事業内容
           </div>
           <div class="c-service-media__image">
             <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/img_6.webp"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/content/service/service-6.webp"
               alt="その他請負業務"
               width="960"
               height="652"

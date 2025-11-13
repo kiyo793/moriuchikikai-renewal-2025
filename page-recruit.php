@@ -9,8 +9,8 @@ Template Name: 採用情報
     <div class="p-pageHead">
       <div class="p-pageHead__bg">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/company/page-header-company.webp"
-          alt="company-head"
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/recruit/page-header-recruit.webp"
+          alt="recruit-head"
           width="2880"
           height="2672" />
       </div>
@@ -46,7 +46,7 @@ Template Name: 採用情報
           <div class="p-message__image" data-animation="fade-in">
             <img
               src="<?php echo get_template_directory_uri(); ?>/assets/img/content/recruit/img_1.webp"
-              alt="工場で働く2人の若手作業員"
+              alt="現場で働く職人が笑顔で語りかける様子。ものづくりの魅力を伝える写真"
               width="2160"
               height="1000" />
           </div>
@@ -61,7 +61,7 @@ Template Name: 採用情報
               高い技術力に、最初は「難しそう」と感じるかもしれません。でも、誰もが最初は未経験。やる気とものづくりが好きな気持ちがあれば大丈夫です。ここで本気で学べば、一生食べていける技術が手に入ります。
             </p>
             <p>
-              実際に、未経験からスタートし、未経験からスタートして長く働き続けている社員が多く、離職率の低さも自慢のひとつです。<br />
+              実際に、未経験からスタートして長く働き続けている社員が多く、離職率の低さも自慢のひとつです。<br />
               必要なのは、やる気と、ものづくりを楽しむ気持ちだけ。
             </p>
             <p>

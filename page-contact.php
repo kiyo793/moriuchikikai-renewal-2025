@@ -10,7 +10,7 @@ Template Name: お問い合わせ
       <div class="p-pageHead__bg">
         <img
           src="<?php echo get_template_directory_uri(); ?>/assets/img/content/contact/page-header-contact.webp"
-          alt="company-head"
+          alt="contact-head"
           width="2880"
           height="2672" />
       </div>

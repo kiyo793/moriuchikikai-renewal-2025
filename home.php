@@ -9,8 +9,8 @@ Template Name: お知らせ
 <div class="p-pageHead">
   <div class="p-pageHead__bg">
     <img
-      src="<?php echo get_template_directory_uri(); ?>/assets/img/content/company/page-header-company.webp"
-      alt="company-head"
+      src="<?php echo get_template_directory_uri(); ?>/assets/img/content/news/page-header-news.webp"
+      alt="news-head"
       width="2880"
       height="2672" />
   </div>

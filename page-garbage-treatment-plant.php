@@ -9,7 +9,7 @@ Template Name: ごみ処理プラント
     <div class="p-pageHead">
       <div class="p-pageHead__bg">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/garbage-treatment-plant/page-header-garbage.webp"
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/content/garbage-treatment-plant/page-header.webp"
           alt="garbage-treatment-plant-head"
           width="2880"
           height="2672" />

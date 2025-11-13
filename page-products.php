@@ -9,7 +9,7 @@ Template Name: 実績紹介
 <div class="p-pageHead">
   <div class="p-pageHead__bg">
     <img
-      src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/page-header-products.webp"
+      src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/page-header-products.webp"
       alt="products-head"
       width="2880"
       height="2672" />
@@ -46,14 +46,14 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_1.webp"
-            alt="タンク"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_1.webp"
+            alt="減温塔ガスダクト"
             width="1010"
             height="746"
             loading="lazy" />
         </div>
         <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">タンク</h2>
+          <h2 class="c-products-card__name">減温塔ガスダクト</h2>
           <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
         </div>
       </div>
@@ -61,14 +61,14 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_2.webp"
-            alt="油圧ダンパー"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_2.webp"
+            alt="灰押出装置本体"
             width="1010"
             height="746"
             loading="lazy" />
         </div>
         <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">油圧ダンパー</h2>
+          <h2 class="c-products-card__name">灰押出装置本体</h2>
           <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
         </div>
       </div>
@@ -76,14 +76,14 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_3.webp"
-            alt="Φ370ｘ1300Lプーリー"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_5.webp"
+            alt="スクリューコンベヤ"
             width="1010"
             height="746"
             loading="lazy" />
         </div>
         <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">Φ370ｘ1300Lプーリー</h2>
+          <h2 class="c-products-card__name">スクリューコンベア(3m)</h2>
           <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
         </div>
       </div>
@@ -91,11 +91,51 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_4.webp"
-            alt="エプロンコンベヤ"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_6.webp"
+            alt="集塵機下ダストコンベヤスクリュー(12m)"
             width="1010"
             height="746"
             loading="lazy" />
+        </div>
+        <div class="c-products-card__bottom">
+          <h2 class="c-products-card__name">集塵機下ダストコンベヤスクリュー(12m)</h2>
+          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
+        </div>
+      </div>
+
+      <div class="c-products-card" data-animation="fade-in">
+        <div class="c-products-card__head">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_9.webp"
+            alt="スラグ切替コンベヤ"
+            width="1010"
+            height="746"
+            loading="lazy" />
+        </div>
+        <div class="c-products-card__bottom">
+          <h2 class="c-products-card__name">スラグ切替コンベヤ</h2>
+          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
+        </div>
+      </div>
+
+      <div class="c-products-card" data-animation="fade-in">
+        <div class="c-products-card__head">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_10.webp"
+            alt="フライトコンベヤ"
+            width="1010"
+            height="746"
+            loading="lazy" />
+        </div>
+        <div class="c-products-card__bottom">
+          <h2 class="c-products-card__name">フライトコンベヤ</h2>
+          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
+        </div>
+      </div>
+
+      <div class="c-products-card" data-animation="fade-in">
+        <div class="c-products-card__head">
+          <video src="<?php echo get_template_directory_uri(); ?>/assets/mov/products-mov.mp4" loop autoplay muted></video>
         </div>
         <div class="c-products-card__bottom">
           <h2 class="c-products-card__name">エプロンコンベヤ</h2>
@@ -106,14 +146,62 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_5.webp"
-            alt="スクリューコンベヤ"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_4.webp"
+            alt="ホッパーゲート"
             width="1010"
             height="746"
             loading="lazy" />
         </div>
         <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">スクリューコンベヤ</h2>
+          <h2 class="c-products-card__name">ホッパーゲート</h2>
+          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
+        </div>
+      </div>
+
+
+
+      <div class="c-products-card" data-animation="fade-in">
+        <div class="c-products-card__head">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_7.webp"
+            alt="脱水し渣ホッパ(6m3)"
+            width="1010"
+            height="746"
+            loading="lazy" />
+        </div>
+        <div class="c-products-card__bottom">
+          <h2 class="c-products-card__name">脱水し渣ホッパ(6m3)</h2>
+          <h3 class="c-products-card__text">素材（ステンレス）</h3>
+        </div>
+      </div>
+
+      <div class="c-products-card" data-animation="fade-in">
+        <div class="c-products-card__head">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_8.webp"
+            alt="脱水汚泥コンベヤ"
+            width="1010"
+            height="746"
+            loading="lazy" />
+        </div>
+        <div class="c-products-card__bottom">
+          <h2 class="c-products-card__name">脱水汚泥コンベヤ</h2>
+          <h3 class="c-products-card__text">素材（ステンレス）</h3>
+        </div>
+      </div>
+
+
+      <div class="c-products-card" data-animation="fade-in">
+        <div class="c-products-card__head">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_11.webp"
+            alt="投入ホッパー"
+            width="1010"
+            height="746"
+            loading="lazy" />
+        </div>
+        <div class="c-products-card__bottom">
+          <h2 class="c-products-card__name">投入ホッパー</h2>
           <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
         </div>
       </div>
@@ -121,14 +209,29 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_6.webp"
-            alt="ヘッドスプロケット"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_12.webp"
+            alt="ガスダクト(φ1200)"
             width="1010"
             height="746"
             loading="lazy" />
         </div>
         <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">ヘッドスプロケット</h2>
+          <h2 class="c-products-card__name">ガスダクト(φ1200)</h2>
+          <h3 class="c-products-card__text">素材（ステンレス）</h3>
+        </div>
+      </div>
+
+      <div class="c-products-card" data-animation="fade-in">
+        <div class="c-products-card__head">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_13.webp"
+            alt="熱分解ドラム"
+            width="1010"
+            height="746"
+            loading="lazy" />
+        </div>
+        <div class="c-products-card__bottom">
+          <h2 class="c-products-card__name">熱分解ドラム</h2>
           <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
         </div>
       </div>
@@ -136,14 +239,14 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_7.webp"
-            alt="駆動ホイル＆シャフト"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_14.webp"
+            alt="キルン炉管(カロライズ加工)"
             width="1010"
             height="746"
             loading="lazy" />
         </div>
         <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">駆動ホイル＆シャフト</h2>
+          <h2 class="c-products-card__name">キルン炉管(カロライズ加工)</h2>
           <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
         </div>
       </div>
@@ -151,14 +254,14 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_8.webp"
-            alt="鋳物２つ割軸受"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_15.webp"
+            alt="調温塔傾斜部"
             width="1010"
             height="746"
             loading="lazy" />
         </div>
         <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">鋳物２つ割軸受</h2>
+          <h2 class="c-products-card__name">調温塔傾斜部</h2>
           <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
         </div>
       </div>
@@ -166,14 +269,14 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_9.webp"
-            alt="φ190ｘ2500Lシャフト"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_16.webp"
+            alt="スクリュー軸(羽部25t.  φ700)"
             width="1010"
             height="746"
             loading="lazy" />
         </div>
         <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">φ190ｘ2500Lシャフト</h2>
+          <h2 class="c-products-card__name">スクリュー軸(羽部25t. φ700)</h2>
           <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
         </div>
       </div>
@@ -181,67 +284,21 @@ Template Name: 実績紹介
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_10.webp"
-            alt="沈殿槽タンク"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_17.webp"
+            alt="螺旋階段"
             width="1010"
             height="746"
             loading="lazy" />
         </div>
         <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">沈殿槽タンク</h2>
-          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
+          <h2 class="c-products-card__name">螺旋階段</h2>
         </div>
       </div>
 
       <div class="c-products-card" data-animation="fade-in">
         <div class="c-products-card__head">
           <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_11.webp"
-            alt="破砕機部品"
-            width="1010"
-            height="746"
-            loading="lazy" />
-        </div>
-        <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">破砕機部品</h2>
-          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
-        </div>
-      </div>
-
-      <div class="c-products-card" data-animation="fade-in">
-        <div class="c-products-card__head">
-          <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_12.webp"
-            alt="砲金２つ割ブッシュ"
-            width="1010"
-            height="746"
-            loading="lazy" />
-        </div>
-        <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">砲金２つ割ブッシュ</h2>
-          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
-        </div>
-      </div>
-
-      <div class="c-products-card" data-animation="fade-in">
-        <div class="c-products-card__head">
-          <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_13.webp"
-            alt="蒸気配管"
-            width="1010"
-            height="746"
-            loading="lazy" />
-        </div>
-        <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">蒸気配管</h2>
-          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
-        </div>
-      </div>
-
-      <div class="c-products-card" data-animation="fade-in">
-        <div class="c-products-card__head">
-          <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_14.webp"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/products/img_18.webp"
             alt="エアーステップ台"
             width="1010"
             height="746"
@@ -249,67 +306,6 @@ Template Name: 実績紹介
         </div>
         <div class="c-products-card__bottom">
           <h2 class="c-products-card__name">エアーステップ台</h2>
-          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
-        </div>
-      </div>
-
-      <div class="c-products-card" data-animation="fade-in">
-        <div class="c-products-card__head">
-          <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_15.webp"
-            alt="油圧機械"
-            width="1010"
-            height="746"
-            loading="lazy" />
-        </div>
-        <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">油圧機械</h2>
-          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
-        </div>
-      </div>
-
-      <div class="c-products-card" data-animation="fade-in">
-        <div class="c-products-card__head">
-          <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_16.webp"
-            alt="チルローダー"
-            width="1010"
-            height="746"
-            loading="lazy" />
-        </div>
-        <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">チルローダー</h2>
-          <h3 class="c-products-card__text">材質（鉄またはステンレス）</h3>
-        </div>
-      </div>
-
-      <div class="c-products-card" data-animation="fade-in">
-        <div class="c-products-card__head">
-          <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_17.webp"
-            alt="ダンプ用ハッチ"
-            width="1010"
-            height="746"
-            loading="lazy" />
-        </div>
-        <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">ダンプ用ハッチ</h2>
-          <h3 class="c-products-card__text">材質なし</h3>
-        </div>
-      </div>
-
-      <div class="c-products-card" data-animation="fade-in">
-        <div class="c-products-card__head">
-          <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/content/produts/img_18.webp"
-            alt="重量単体物輸送"
-            width="1010"
-            height="746"
-            loading="lazy" />
-        </div>
-        <div class="c-products-card__bottom">
-          <h2 class="c-products-card__name">重量単体物輸送</h2>
-          <h3 class="c-products-card__text">材質なし</h3>
         </div>
       </div>
     </div>
